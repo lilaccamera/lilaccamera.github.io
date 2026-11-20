@@ -1,0 +1,276 @@
+/* Lilac Camera docs theme.
+   Corners: every box (banner, cards, notes, tables, figures) uses --lilac-radius; inline code uses the small radius;
+   buttons and tags are pills. The phone drawings stay square: they show the real phone.
+   Text colours are chosen for at least 4.5:1 contrast on their background in both themes. */
+
+/* ---- Tokens ---- */
+:root > * {
+  --md-primary-fg-color:        #7550D4;   /* the app icon's lilac; white on it is 5.0:1 */
+  --md-primary-fg-color--light: #B48BF5;
+  --md-primary-fg-color--dark:  #5E44A8;
+  --md-accent-fg-color:         #5E44A8;
+}
+:root {
+  --lilac-radius: 12px;
+  --lilac-radius-sm: 6px;
+  --lilac-deep: #3B2A66;        /* header and banner */
+  --lilac-deep-2: #4B3585;      /* banner gradient end */
+  --lilac-pale: #E2C6FF;        /* banner tagline: 9:1 on the banner */
+  --lilac-title: #5E44A8;       /* titles on white: 7.6:1 */
+  --lilac-border: #E5DEF3;
+  --lilac-fill: rgba(117, 80, 212, .08);
+  --lilac-muted: #5D5A66;       /* secondary text on white: 6.8:1 */
+  --lilac-auto: #2E7D32;        /* the AUTO mode mark on white: 5.1:1 */
+  --lilac-on-primary: #FFFFFF;
+  --lilac-shadow: 0 1px 2px rgba(33, 0, 93, .06), 0 6px 18px rgba(33, 0, 93, .06);
+}
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #B48BF5;
+  --md-accent-fg-color:  #E2C6FF;
+  --md-typeset-a-color:  #B48BF5;       /* links on the dark page: 8:1 */
+  --lilac-deep: #2E2152;
+  --lilac-deep-2: #3B2A66;
+  --lilac-title: #E2C6FF;
+  --lilac-border: #3A2F5C;
+  --lilac-fill: rgba(180, 139, 245, .12);
+  --lilac-muted: #ABA8B5;               /* secondary text on the dark page: 8:1 */
+  --lilac-auto: #5DCAA5;
+  --lilac-on-primary: #21005D;          /* dark text on light lilac: 7.7:1 */
+  --lilac-shadow: none;
+}
+
+/* ---- Page ---- */
+.md-header, .md-tabs { background-color: var(--lilac-deep); color: #fff; }
+.md-header .md-header__button, .md-header .md-header__title, .md-header .md-header__topic,
+.md-header .md-search__icon, .md-header .md-header__option { color: #fff; }
+.md-header .md-logo img { height: 1.6rem; width: auto; border-radius: 22%; }
+.md-typeset h1 { font-weight: 700; letter-spacing: -.02em; }
+.md-typeset h2 { font-weight: 700; letter-spacing: -.01em; }
+.md-typeset a { text-underline-offset: .18em; }
+.md-nav__link--active, .md-nav__link:is(:hover, :focus-visible) { color: var(--lilac-title); }
+.md-nav__link--active { background-color: var(--lilac-fill); }
+
+/* Notes and collapsible boxes: lilac, not the theme's cyan; warnings keep their own colour. */
+.md-typeset :is(.admonition, details) { border-radius: var(--lilac-radius); box-shadow: none; }
+.md-typeset :is(.admonition, details):is(.note, .info, .abstract, .tip, .example, .question) {
+  background-color: var(--lilac-fill); border: 1px solid var(--lilac-border);
+}
+.md-typeset :is(.note, .info, .abstract, .tip, .example, .question) > :is(.admonition-title, summary)::before {
+  background-color: var(--md-primary-fg-color);
+}
+.md-typeset :is(.note, .info, .abstract, .tip, .example, .question) > summary::after { color: var(--md-primary-fg-color); }
+
+/* Tables and code. */
+.md-typeset table:not([class]) { border: 1px solid var(--lilac-border); border-radius: var(--lilac-radius); overflow: hidden; }
+.md-typeset table:not([class]) th { background-color: var(--lilac-fill); color: var(--lilac-title); }
+.md-typeset code { border-radius: var(--lilac-radius-sm); }
+
+/* ---- Icons and marks ---- */
+img.icon { height: 1.25em; width: auto; vertical-align: -0.25em; }
+[data-md-color-scheme="slate"] img.icon { filter: invert(1); }
+.md-typeset table img.icon { height: 1.8em; }
+.mode-mark { font-weight: 600; font-size: 0.8em; letter-spacing: 0.04em; }
+.mode-mark--auto { color: var(--lilac-auto); }
+
+/* ---- Home page: banner, buttons, cards ---- */
+.lilac-hero {
+  display: flex; align-items: center; gap: 1.4rem;
+  background-color: var(--lilac-deep); background-image: linear-gradient(135deg, var(--lilac-deep), var(--lilac-deep-2)); color: #fff;
+  border-radius: var(--lilac-radius); padding: 2rem 1.6rem; margin: 0 0 1.4rem; box-shadow: var(--lilac-shadow);
+}
+.lilac-hero__icon { width: 96px; height: 96px; flex: none; border-radius: 22%; }
+.md-typeset .lilac-hero h1 { color: #fff; margin: 0 0 .3rem; }
+.lilac-hero__tagline { color: var(--lilac-pale); margin: 0 0 1rem; font-size: 1.05em; }
+.lilac-hero__buttons { display: flex; flex-wrap: wrap; gap: .6rem; }
+.md-typeset .lilac-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 44px; padding: 0 1.3rem; border-radius: 999px;
+  font-weight: 600; text-decoration: none; border: 2px solid #B48BF5; transition: background-color .15s, border-color .15s;
+}
+.md-typeset .lilac-btn--primary { background: #B48BF5; color: #21005D; }   /* 7.7:1 */
+.md-typeset .lilac-btn--primary:hover { background: var(--lilac-pale); border-color: var(--lilac-pale); color: #21005D; }
+.md-typeset .lilac-btn--outline { background: transparent; color: #fff; }
+.md-typeset .lilac-btn--outline:hover { background: rgba(255, 255, 255, .1); color: #fff; }
+.md-typeset .lilac-btn:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+
+.lilac-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: .8rem; margin: 1.2rem 0 1.6rem; }
+.md-typeset a.lilac-card {
+  display: flex; flex-direction: column; gap: .3rem; min-height: 44px;
+  padding: 1rem 1.1rem; border: 1px solid var(--lilac-border); border-radius: var(--lilac-radius);
+  color: var(--lilac-muted); text-decoration: none; background: var(--md-default-bg-color);
+  box-shadow: var(--lilac-shadow); transition: border-color .15s, transform .15s;
+}
+.md-typeset a.lilac-card strong { color: var(--lilac-title); font-size: 1.05em; }
+.md-typeset a.lilac-card:hover, .md-typeset a.lilac-card:focus-visible { border-color: var(--md-primary-fg-color); transform: translateY(-1px); }
+
+@media screen and (max-width: 44.9375em) {
+  .lilac-hero { flex-direction: column; align-items: flex-start; gap: 1rem; padding: 1.4rem 1.1rem; margin: 0 -.4rem 1.2rem; }
+  .lilac-hero__icon { width: 64px; height: 64px; }
+  .lilac-hero__buttons { width: 100%; }
+  .md-typeset .lilac-btn { flex: 1 1 100%; }
+  .lilac-cards { grid-template-columns: 1fr; }
+}
+
+/* ---- Home page: a default camera app compared with Lilac ---- */
+.lilac-compare {
+  border: 1px solid var(--lilac-border); border-radius: var(--lilac-radius); overflow: hidden;
+  margin: 1.2rem 0 1.4rem; font-size: .8rem; box-shadow: var(--lilac-shadow);
+}
+.lilac-compare__row { display: grid; grid-template-columns: 9.5rem 1fr 1fr; }
+.lilac-compare__row + .lilac-compare__row > span { border-top: 1px solid var(--lilac-border); }
+.lilac-compare__row > span { padding: .6rem .8rem; line-height: 1.45; color: var(--lilac-muted); }
+.lilac-compare__row > span.lilac-compare__lilac { background: var(--lilac-fill); color: var(--md-default-fg-color); box-shadow: inset 2px 0 var(--md-primary-fg-color); }
+.lilac-compare__row--head > span { font-weight: 700; color: var(--md-default-fg-color); }
+.lilac-compare__row--head > span.lilac-compare__lilac { color: var(--lilac-title); }
+.lilac-compare__row--head small { display: block; font-weight: 400; color: var(--lilac-muted); opacity: 1; }
+.lilac-compare__row > span.lilac-compare__topic { display: flex; align-items: flex-start; gap: .45rem; font-weight: 700; color: var(--lilac-title); }
+.md-typeset .lilac-compare__topic img.icon { height: 1.35em; flex: none; }
+@media screen and (max-width: 44.9375em) {
+  .lilac-compare { margin-left: -.4rem; margin-right: -.4rem; font-size: .74rem; }
+  /* Phones: the topic sits above its two cells; the Lilac fill carries on through the topic line. */
+  .lilac-compare__row { grid-template-columns: 1fr 1fr; }
+  .lilac-compare__row > span { padding: .1rem .6rem .6rem; }
+  .lilac-compare__row > span.lilac-compare__topic {
+    grid-column: 1 / -1; padding-top: .55rem;
+    background: linear-gradient(to right, transparent 50%, var(--md-primary-fg-color) 50%, var(--md-primary-fg-color) calc(50% + 2px), var(--lilac-fill) calc(50% + 2px));
+  }
+  .lilac-compare__row + .lilac-compare__row > span:not(.lilac-compare__topic) { border-top: 0; }
+  .lilac-compare__row--head > span.lilac-compare__topic { display: none; }
+  .lilac-compare__row--head > span { padding-top: .6rem; }
+}
+
+/* Tags: where Lilac uses GCam's pipeline or Sony's features. */
+.lilac-tag { display: inline-block; margin-left: .3em; padding: 0 .5em; border-radius: 999px; font-size: .78em; font-weight: 700; line-height: 1.6; vertical-align: .05em; white-space: nowrap; }
+.lilac-tag--gcam { background: var(--md-primary-fg-color); color: var(--lilac-on-primary); }
+.lilac-tag--sony { background: transparent; color: var(--md-default-fg-color); box-shadow: inset 0 0 0 1px var(--lilac-muted); }
+.md-typeset .lilac-legend { font-size: .72rem; color: var(--lilac-muted); margin: -.6rem 0 1.2rem; }
+.md-typeset .lilac-legend .lilac-tag { margin-left: 0; }
+
+/* ---- Figures: diagrams and charts drawn with the theme's colours ---- */
+.lilac-fig { max-width: 30rem; margin: 1.6em auto; }
+.lilac-fig svg { display: block; width: 100%; height: auto; overflow: visible; }
+.lilac-fig figcaption { font-size: .75rem; color: var(--lilac-muted); text-align: center; margin-top: .5em; }
+.lilac-fig text { fill: var(--md-default-fg-color); font-size: 12px; }
+.lilac-fig text.strong { font-weight: 600; }
+.lilac-fig text.sub, .lilac-fig text.tick { fill: var(--lilac-muted); font-size: 11px; }
+.lilac-fig .box-sony { fill: var(--md-default-fg-color--lightest); stroke: var(--md-default-fg-color--light); stroke-width: 1; }
+.lilac-fig .box-lilac { fill: var(--lilac-fill); stroke: var(--md-primary-fg-color); stroke-width: 1.5; }
+.lilac-fig .line { fill: none; stroke: var(--md-default-fg-color--light); stroke-width: 1.5; }
+.lilac-fig .arrow-head { fill: var(--md-default-fg-color--light); }
+.lilac-fig .grid { stroke: var(--md-default-fg-color--lightest); stroke-width: 1; }
+.lilac-fig .axis { stroke: var(--md-default-fg-color--light); stroke-width: 1; }
+.lilac-fig .band { fill: var(--lilac-fill); }
+.lilac-fig .series { fill: none; stroke: var(--md-primary-fg-color); stroke-width: 2; stroke-linecap: round; }
+.lilac-fig .dot { fill: var(--md-primary-fg-color); stroke: var(--md-default-bg-color); stroke-width: 2; }
+.lilac-fig .range { fill: none; stroke: var(--md-default-fg-color); stroke-width: 2; stroke-linecap: round; }
+.lilac-fig .bar { fill: var(--md-primary-fg-color); }
+.lilac-fig .clip { fill: var(--md-default-bg-color); stroke: var(--md-default-fg-color--light); stroke-width: 1; }
+.lilac-fig .noisy { stroke: var(--md-default-fg-color--light); stroke-width: 1; }
+.lilac-fig .hatch { stroke: var(--md-default-fg-color--light); stroke-width: 1.5; }
+.lilac-fig .scene { stroke: var(--md-default-fg-color--light); stroke-width: 1; }
+.lilac-fig .g0 { stop-color: #1b1726; }
+.lilac-fig .g1 { stop-color: #fffbe8; }
+.lilac-fig .num { fill: var(--md-primary-fg-color); }
+.lilac-fig text.num-t { fill: var(--lilac-on-primary); font-weight: 600; }
+.lilac-fig rect.bar:hover, .lilac-fig circle.dot:hover { opacity: .8; }
+
+/* The phone drawings: an Xperia XZ1 Compact in Sony help-guide style, with numbered markers and a key. */
+.lilac-fig--phone { max-width: 24rem; }
+.lilac-fig .xz-body { fill: #1b1b1f; stroke: var(--md-default-fg-color--light); stroke-width: 1.2; }
+.lilac-fig .xz-glass { fill: #0d0d10; }
+.lilac-fig .xz-slot { fill: #3a3a40; }
+.lilac-fig .xz-cam { fill: #26262c; stroke: #4a4a52; stroke-width: 1; }
+.lilac-fig .ui-icon { filter: invert(84%) sepia(6%) saturate(180%) hue-rotate(15deg); }
+.lilac-fig .ui-icon.ui-amber { filter: invert(67%) sepia(54%) saturate(870%) hue-rotate(353deg) brightness(98%) contrast(92%); }
+.lilac-fig text.ui-text { fill: #fff; font-size: 7px; font-weight: 500; font-family: Roboto, "Helvetica Neue", Arial, sans-serif; }
+.lilac-fig text.ui-end { fill: #9C9A92; font-size: 4.8px; font-weight: 500; }
+.lilac-fig text.ui-knob { fill: #EF9F27; font-size: 5.8px; font-weight: 600; }
+.lilac-fig text.ui-mark { fill: #D3D1C7; font-size: 6.7px; font-weight: 500; letter-spacing: .24px; font-family: Roboto, "Helvetica Neue", Arial, sans-serif; opacity: .75; }
+.lilac-fig .key-line { fill: none; stroke: var(--md-primary-fg-color); stroke-width: .8; }
+.lilac-fig .key-dot { fill: var(--md-primary-fg-color); }
+.lilac-fig text.key-num { fill: var(--lilac-on-primary); font-size: 9px; font-weight: 700; }
+.md-typeset ol.lilac-key { list-style: none; counter-reset: key; padding: 0; margin: .4rem auto 1.4rem; max-width: 30rem; font-size: .78rem; }
+.md-typeset ol.lilac-key li { counter-increment: key; position: relative; margin: 0 0 .45rem; padding-left: 1.9em; line-height: 1.5; }
+.md-typeset ol.lilac-key li::before {
+  content: counter(key); position: absolute; left: 0; top: .1em; width: 1.35em; height: 1.35em; border-radius: 50%;
+  background: var(--md-primary-fg-color); color: var(--lilac-on-primary); font-size: .85em; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* Code blocks share the box radius; on phones they keep their margins instead of running edge to edge. */
+.md-typeset .highlight, .md-typeset pre { border-radius: var(--lilac-radius); }
+.md-typeset .highlight { overflow: hidden; }
+.md-typeset .highlight pre, .md-typeset .highlight .filename { border-radius: 0; }
+@media screen and (max-width: 44.9375em) {
+  .md-typeset > :is(.highlight, pre), .md-typeset li > :is(.highlight, pre) { margin-left: 0; margin-right: 0; }
+}
+
+/* ---- Home page: numbered sections that the cards at the top lead to ---- */
+.md-typeset a.lilac-card { position: relative; }
+.lilac-cards--steps a.lilac-card { padding-top: 2.6rem; }
+.lilac-card__num, .md-typeset h2.lilac-step::before {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 1.7rem; height: 1.7rem; border-radius: 50%;
+  background: var(--md-primary-fg-color); color: var(--lilac-on-primary); font-weight: 700; font-size: .8rem;
+}
+.lilac-card__num { position: absolute; top: .9rem; left: 1.1rem; }
+.md-typeset h2.lilac-step::before { content: attr(data-step); margin-right: .6rem; vertical-align: .15em; }
+.md-typeset:has(.lilac-hero) h2 { border-top: 1px solid var(--lilac-border); padding-top: 1.6rem; margin-top: 2.4rem; }
+.md-typeset a.lilac-next {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 44px;
+  margin: 1.2rem 0 0; padding: .7rem 1.1rem; border-radius: var(--lilac-radius);
+  background: var(--lilac-fill); border: 1px solid var(--lilac-border); color: var(--lilac-title); font-weight: 600; text-decoration: none;
+}
+.md-typeset a.lilac-next::after { content: "→"; font-size: 1.2em; }
+.md-typeset a.lilac-next:hover, .md-typeset a.lilac-next:focus-visible { border-color: var(--md-primary-fg-color); }
+.lilac-map { display: grid; grid-template-columns: repeat(3, 1fr); gap: .8rem; }
+.lilac-map > div { border: 1px solid var(--lilac-border); border-radius: var(--lilac-radius); padding: .2rem 1.1rem .6rem; }
+.md-typeset .lilac-map h3 { margin: .8rem 0 .4rem; font-size: .9rem; color: var(--lilac-title); }
+.md-typeset .lilac-map ul { list-style: none; margin: 0; padding: 0; }
+.md-typeset .lilac-map li { margin: 0; padding: .25rem 0; }
+.md-typeset .lilac-credit { color: var(--lilac-muted); font-size: .72rem; margin-top: 2rem; }
+@media screen and (max-width: 44.9375em) { .lilac-map { grid-template-columns: 1fr; } }
+
+/* Home page: the one-hand figure beside its numbered list; side keys on the phone outline. */
+.lilac-split { display: grid; grid-template-columns: minmax(0, 15rem) 1fr; gap: 1.6rem; align-items: center; margin: 1rem 0; }
+.lilac-split .lilac-fig { margin: 0; }
+.md-typeset .lilac-split ol.lilac-key { margin: 0; max-width: none; font-size: .8rem; }
+.md-typeset .lilac-split ol.lilac-key li { margin-bottom: .8rem; }
+.xz-key { fill: #2a2830; }
+.xz-key--on { fill: var(--md-primary-fg-color); }
+@media screen and (max-width: 44.9375em) {
+  .lilac-split { grid-template-columns: 1fr; }
+  .lilac-split .lilac-fig svg { max-width: 17rem; margin: 0 auto; display: block; }
+}
+/* The thumb's reach is animated in the SVG itself; without motion it is not shown, and the list explains it. */
+@media (prefers-reduced-motion: reduce) { .tz-anim { display: none; } }
+
+/* Sony hardware: feature cards and the scene icons. */
+.lilac-features { display: grid; grid-template-columns: repeat(2, 1fr); align-items: start; gap: .7rem; margin: .8rem 0 1.4rem; }
+.lilac-feature { display: flex; gap: .8rem; align-items: flex-start; padding: .8rem .9rem; border: 1px solid var(--lilac-border); border-radius: var(--lilac-radius); }
+.md-typeset .lilac-feature__icon, .md-typeset .lilac-scene img { width: 1.6rem; height: 1.6rem; flex: none; padding: .35rem; box-sizing: content-box; border-radius: 50%; background: var(--lilac-fill); }
+[data-md-color-scheme="slate"] .lilac-feature__icon, [data-md-color-scheme="slate"] .lilac-scene img { filter: invert(1); background: rgba(0, 0, 0, .35); }
+.lilac-feature strong { display: block; color: var(--lilac-title); }
+.lilac-feature span { display: block; font-size: .78rem; color: var(--lilac-muted); line-height: 1.5; }
+.lilac-scenes { display: grid; grid-template-columns: repeat(auto-fill, minmax(4.6rem, 1fr)); gap: .6rem .4rem; margin: .8rem 0 1.4rem; }
+.lilac-scene { display: flex; flex-direction: column; align-items: center; gap: .3rem; text-align: center; }
+.lilac-scene small { font-size: .68rem; color: var(--lilac-muted); }
+@media screen and (max-width: 44.9375em) { .lilac-features { grid-template-columns: 1fr; } }
+/* "In Lilac": a small closed note under each card; it opens on click. */
+.md-typeset details.lilac-feature__enables { margin: .35rem 0 0; padding: 0; border: 0; background: none; box-shadow: none; font-size: .72rem; }
+.md-typeset details.lilac-feature__enables > summary {
+  display: inline-flex; align-items: center; gap: .2rem; min-height: 28px; min-width: 44px; padding: 0 .5rem; margin: 0;
+  border-radius: 999px; background: var(--lilac-fill); color: var(--lilac-title); font-weight: 600; cursor: pointer; list-style: none;
+}
+.md-typeset details.lilac-feature__enables > summary::-webkit-details-marker { display: none; }
+.md-typeset details.lilac-feature__enables > summary::before { content: none; }
+.md-typeset details.lilac-feature__enables > summary::after {
+  content: "›"; position: static; width: auto; height: auto; background: none; -webkit-mask: none; mask: none;
+  transform: none; transition: transform .15s; color: inherit; font-size: 1.1em; line-height: 1;
+}
+.md-typeset details.lilac-feature__enables[open] > summary::after { transform: rotate(90deg); }
+.md-typeset details.lilac-feature__enables > summary:focus-visible { outline: 2px solid var(--md-primary-fg-color); outline-offset: 2px; }
+.md-typeset details.lilac-feature__enables > summary img { width: 1.15rem; height: 1.15rem; }
+[data-md-color-scheme="slate"] details.lilac-feature__enables > summary img { filter: invert(1); }
+.lilac-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.md-typeset details.lilac-feature__enables > p { margin: .4rem 0 0; color: var(--lilac-muted); line-height: 1.5; }

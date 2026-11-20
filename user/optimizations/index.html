@@ -1,0 +1,1824 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="How to use Lilac Camera on the Xperia XZ1 Compact">
+      
+      
+      
+        <link rel="canonical" href="https://lilaccamera.github.io/user/optimizations/">
+      
+      
+      
+        <link rel="prev" href="../focus/">
+      
+      
+        <link rel="next" href="../getting-started/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../images/lilac-icon.svg">
+      <meta name="generator" content="zensical-0.1.1">
+    
+    
+      
+        <title>Optimizations and tweaks - Lilac Camera</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.ebb7f775.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.b60ce83d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/lilac.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-hidden="true"></label>
+    <div data-md-component="skip">
+      <a href="#__skip" class="md-skip">
+        Skip to content
+      </a>
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Lilac Camera" class="md-header__button md-logo" aria-label="Lilac Camera" data-md-component="logo">
+      
+  <img src="../../images/lilac-icon.svg" alt="Lilac Camera">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+      <span class="md-visually-hidden">Navigation</span>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lilac Camera
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Optimizations and tweaks
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+          <span class="md-visually-hidden">Search</span>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+        <a href="https://github.com/lilaccamera/lilaccamera" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Lilac Camera" class="md-nav__button md-logo" aria-label="Lilac Camera" data-md-component="logo">
+      
+  <img src="../../images/lilac-icon.svg" alt="Lilac Camera">
+
+    </a>
+    Lilac Camera
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/lilaccamera/lilaccamera" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-house" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Home
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  How it works
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+            <label class="md-nav__title" for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  How it works
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-cpu" viewBox="0 0 24 24"><path d="M12 20v2M12 2v2M17 20v2M17 2v2M2 12h2M2 17h2M2 7h2M20 12h2M20 17h2M20 7h2M7 20v2M7 2v2"/><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="8" height="8" x="8" y="8" rx="1"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Sony camera features
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-pictures-are-made/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  How a picture is made
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../small-screen/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-smartphone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Built for a small screen
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../focus/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-focus" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Focus and faces
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-zap" viewBox="0 0 24 24"><path d="M15.914 4a1.5 1.5 0 0 0-2.474-1.561l-9 9A1.5 1.5 0 0 0 5.5 14h4.002a.5.5 0 0 1 .471.666L8.086 20a1.5 1.5 0 0 0 2.475 1.56l9-9A1.5 1.5 0 0 0 18.5 10h-3.997a.5.5 0 0 1-.472-.667z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Optimizations and tweaks
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-zap" viewBox="0 0 24 24"><path d="M15.914 4a1.5 1.5 0 0 0-2.474-1.561l-9 9A1.5 1.5 0 0 0 5.5 14h4.002a.5.5 0 0 1 .471.666L8.086 20a1.5 1.5 0 0 0 2.475 1.56l9-9A1.5 1.5 0 0 0 18.5 10h-3.997a.5.5 0 0 1-.472-.667z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Optimizations and tweaks
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sony-camera-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Sony camera features
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sony camera features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#focus-faces-and-exposure" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Focus, faces and exposure
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#front-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Front camera
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#video-and-slow-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Video and slow motion
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcam-processing-and-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        GCam processing and memory
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GCam processing and memory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#photo-and-night" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Photo and Night
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pro-mode-and-raw" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pro mode and RAW
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memory-and-keeping-the-app-alive" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Memory and keeping the app alive
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-rest-of-the-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        The rest of the app
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The rest of the app">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starting-up-and-switching-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Starting up and switching modes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#portrait" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Portrait
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-camera-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        The camera screen
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-settings-manual-controls-and-gestures" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Quick settings, manual controls and gestures
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Settings
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-photo-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        The photo editor
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gallery-and-photo-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Gallery and photo view
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reliability-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Reliability fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#touch-sound-and-haptics" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Touch, sound and haptics
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#working-with-the-phone-and-other-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Working with the phone and other apps
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#privacy-branding-and-housekeeping" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Privacy, branding and housekeeping
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-not-listed" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        What is not listed
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Using Lilac
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Using Lilac
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-play" viewBox="0 0 24 24"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Getting started
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../photo-mode/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-camera" viewBox="0 0 24 24"><path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z"/><circle cx="12" cy="13" r="3"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Photo and Night
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pro-mode/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-aperture" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m14.31 8 5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16 3.95 6.06M14.31 16H2.83M16.62 12l-5.74 9.94"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Pro
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hdr/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  HDR
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../portrait/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-user-round" viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Portrait
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../video/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-video" viewBox="0 0 24 24"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect width="14" height="12" x="2" y="6" rx="2"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Video
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gallery/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-images" viewBox="0 0 24 24"><path d="m22 11-1.296-1.296a2.4 2.4 0 0 0-3.408 0L11 16"/><path d="M4 8a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2"/><circle cx="13" cy="7" r="1" fill="currentColor"/><rect width="14" height="14" x="8" y="2" rx="2"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Gallery and viewer
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../editor/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sliders-horizontal" viewBox="0 0 24 24"><path d="M10 5H3M12 19H3M14 3v4M16 17v4M21 12h-9M21 19h-5M21 5h-7M8 10v4M8 12H3"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Editor
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-life-buoy" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24M14.83 9.17l4.24-4.24M14.83 14.83l4.24 4.24M9.17 14.83l-4.24 4.24"/><circle cx="12" cy="12" r="4"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Troubleshooting
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bridge/install/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-plug" viewBox="0 0 24 24"><path d="M12 22v-5M15 8V2M17 8a1 1 0 0 1 1 1v4a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1zM9 8V2"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Sony bridge
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rom/integration/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-package" viewBox="0 0 24 24"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73zM12 22V12"/><path d="M3.29 7 12 12l8.71-5M7.5 4.27l9 5.15"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  ROM integration
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sony-camera-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Sony camera features
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sony camera features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#focus-faces-and-exposure" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Focus, faces and exposure
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#front-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Front camera
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#video-and-slow-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Video and slow motion
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcam-processing-and-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        GCam processing and memory
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GCam processing and memory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#photo-and-night" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Photo and Night
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pro-mode-and-raw" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pro mode and RAW
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memory-and-keeping-the-app-alive" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Memory and keeping the app alive
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-rest-of-the-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        The rest of the app
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The rest of the app">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starting-up-and-switching-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Starting up and switching modes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#portrait" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Portrait
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-camera-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        The camera screen
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-settings-manual-controls-and-gestures" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Quick settings, manual controls and gestures
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Settings
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-photo-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        The photo editor
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gallery-and-photo-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Gallery and photo view
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reliability-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Reliability fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#touch-sound-and-haptics" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Touch, sound and haptics
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#working-with-the-phone-and-other-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Working with the phone and other apps
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#privacy-branding-and-housekeeping" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Privacy, branding and housekeeping
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-not-listed" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        What is not listed
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                <a id="__skip" tabindex="-1"></a>
+                
+                  
+
+  
+  
+
+
+<h1 id="optimizations-and-tweaks">Optimizations and tweaks<a class="headerlink" href="#optimizations-and-tweaks" title="Permanent link">&para;</a></h1>
+<p>Lilac started as a fork of <a href="https://github.com/bjzhou/PhotonCamera">PhotonCamera</a>. This page lists what Lilac has changed on its own since then, in three groups: Sony's camera features, GCam's multi-frame processing and the memory work behind it, and the rest of the app. It does not list PhotonCamera's own features.</p>
+<p>The measurements were taken on an Xperia XZ1 Compact, a phone with 4 GB of memory and a 4.6-inch screen. Most of the work follows from those two facts, and from the aim of bringing Sony's camera features and GCam's processing to this phone.</p>
+<details class="info">
+<summary>Words used on this page</summary>
+<dl>
+<dt>RAW</dt>
+<dd>The sensor's unprocessed picture data. It holds more detail than a JPEG and is developed afterwards.</dd>
+<dt>Stacking (merging)</dt>
+<dd>Taking several shots and combining them into one photo with less noise and more detail.</dd>
+<dt>Burst</dt>
+<dd>Several shots in quick succession. Lilac merges the shots of a burst into one photo.</dd>
+<dt>HDR</dt>
+<dd>Combining a darker and a brighter shot so that both the bright and the dark parts of a scene keep their detail.</dd>
+<dt>Noise</dt>
+<dd>The grainy speckle that shows up in dim photos.</dd>
+<dt>ISO</dt>
+<dd>The camera's light sensitivity. A higher ISO brightens a dim scene and adds more noise.</dd>
+<dt>Exposure</dt>
+<dd>How much light a photo gets, set by the shutter speed and the ISO.</dd>
+<dt>Viewfinder</dt>
+<dd>The live picture on the screen while you frame a shot.</dd>
+<dt>Frame</dt>
+<dd>One picture of a burst or a video.</dd>
+<dt>GPU</dt>
+<dd>The phone's graphics chip. Lilac uses it for much of the photo processing, and on this phone it has to share its memory with everything else.</dd>
+<dt>Look (LUT)</dt>
+<dd>A colour style applied to a photo, such as a film look.</dd>
+<dt>Bokeh</dt>
+<dd>The soft blur behind a subject in a portrait.</dd>
+<dt>MP</dt>
+<dd>Megapixels, the size of a picture. The phone's back camera takes 19 MP photos.</dd>
+</dl>
+</details>
+<h2 id="sony-camera-features">Sony camera features<a class="headerlink" href="#sony-camera-features" title="Permanent link">&para;</a></h2>
+<p>Lilac's work on Sony's own camera features: face and subject tracking, focus, Sony's photo processing and slow motion. What is done and what is not yet is on <a href="../hardware/">Sony camera features</a>.</p>
+<h3 id="focus-faces-and-exposure">Focus, faces and exposure<a class="headerlink" href="#focus-faces-and-exposure" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Sony-style face frames and subject tracking.</strong> Up to five faces get a light frame that glides smoothly, and tapping something that is not a face follows that object. Focus and exposure are steered to the tracked face or object, using the phone's own face detection and tracking, as Sony's camera does. (<a href="https://github.com/lilaccamera/lilaccamera/commit/d1151185"><code>d115118</code></a>)</li>
+<li><strong>Half-press on the camera key holds focus and exposure, like a Sony camera.</strong> Half-pressing locks focus and exposure on your tapped point or the centre; a point already in focus shows green at once with a light tick, and a miss is focused again. An amber exposure lock mark shows on the top edge. (<a href="https://github.com/lilaccamera/lilaccamera/commit/f9a19ab8"><code>f9a19ab</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/a5050a8e"><code>a5050a8</code></a>)</li>
+<li><strong>Smile shutter.</strong> A new Smile tile takes the photo by itself when the main face smiles as much as you set (small, average or big), at most once a second. A gauge on the face frame fills with the smile. Smile and the self-timer switch each other off. (<a href="https://github.com/lilaccamera/lilaccamera/commit/3bd1e2f5"><code>3bd1e2f</code></a>)</li>
+<li><strong>Faces are found with the phone held sideways.</strong> Eye focus and Portrait no longer lose the face in landscape, on the back and front camera. The viewfinder picture is turned to match the phone's rotation before faces are looked for. (<a href="https://github.com/lilaccamera/lilaccamera/commit/79611edb"><code>79611ed</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/03c93396"><code>03c9339</code></a>)</li>
+<li><strong>A Sony-style focus frame.</strong> A tap draws a thin square: white while focusing, green with a light tick when focus locks, three white blinks on a miss. On the front camera, which cannot report focus, a tap now only sets exposure and shows an exposure circle. (<a href="https://github.com/lilaccamera/lilaccamera/commit/c145afa3"><code>c145afa</code></a>)</li>
+<li><strong>Metering circle like Sony's.</strong> In Spot metering (measuring brightness at one point) a small circle sits in the centre and moves with your tap, and can be dragged elsewhere. Centre-weighted metering shows it fixed in the centre; other modes show none. Starting tracking no longer sends it to the centre first. (<a href="https://github.com/lilaccamera/lilaccamera/commit/f9a19ab8"><code>f9a19ab</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/28b3a751"><code>28b3a75</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/d9ae10c9"><code>d9ae10c</code></a>)</li>
+<li><strong>A tapped focus point stays put in dim light.</strong> Leftover results from the previous focus lock and ongoing brightness changes were mistaken for a scene change, so the point was dropped within about a second. The app now waits for the real focus result and for exposure to settle. (<a href="https://github.com/lilaccamera/lilaccamera/commit/2b19e202"><code>2b19e20</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/60b812d2"><code>60b812d</code></a>)</li>
+<li><strong>Bigger focus area in dim light.</strong> From ISO 1600 up, a small focus area is enlarged, because a tiny dark patch holds too little detail to focus on. In a test, a half-press on a far background went from missing to focusing in about 1.5 s. (<a href="https://github.com/lilaccamera/lilaccamera/commit/825e5dbd"><code>825e5db</code></a>)</li>
+<li><strong>Subject focus searches are no longer cut short.</strong> A search used to be ended early by a leftover "focused" result from before it started, so many were cancelled almost at once. They now wait for their own result, and the time limit grows from 2 s to 4 s so the lens can finish a full sweep. (<a href="https://github.com/lilaccamera/lilaccamera/commit/71576ff3"><code>71576ff</code></a>)</li>
+<li><strong>No endless focus hunting in the dark.</strong> In a scene too dark to focus, the lens used to sweep its whole range again every 2 s. After two misses in a row, it now stops searching until the subject changes, you tap or choose a face, or continuous focus finds focus again. (<a href="https://github.com/lilaccamera/lilaccamera/commit/bd2c75bf"><code>bd2c75b</code></a>)</li>
+<li><strong>Far subjects the camera cannot focus on get a sensible fallback.</strong> If a tap, half-press or subject search ends unfocused and the back camera's laser distance sensor (which sees only to about 2 m) sees nothing, the lens is set so everything from about 2 m outwards is sharp. Automatic focus returns on the next tap or scene change. (<a href="https://github.com/lilaccamera/lilaccamera/commit/4c82b7e1"><code>4c82b7e</code></a>)</li>
+<li><strong>A tap on a plain area focuses on that spot.</strong> A blank or dark area has no object to follow, and the tracking box used to wander off. If it drifts or is lost soon after the tap, tracking stops and the tap becomes an ordinary fixed focus point. (<a href="https://github.com/lilaccamera/lilaccamera/commit/3824610d"><code>3824610</code></a>)</li>
+<li><strong>Taps on the front camera land in the right place.</strong> The front camera's picture is mirrored, and the app undid the mirroring in the wrong order, so on most front cameras a tap was measured at the opposite point of the picture. It now maps correctly. (<a href="https://github.com/lilaccamera/lilaccamera/commit/f30a4174"><code>f30a417</code></a>)</li>
+<li><strong>An old tapped point clears itself.</strong> A tapped point is dropped about 10 seconds after its mark fades, so a later half-press starts from the centre again. A point whose brightness you moved away from the focus mark stays until your next tap. (<a href="https://github.com/lilaccamera/lilaccamera/commit/a5050a8e"><code>a5050a8</code></a>)</li>
+</ul>
+<h3 id="front-camera">Front camera<a class="headerlink" href="#front-camera" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Choose Fast or Accurate colour on the front camera.</strong> In dim light, front camera photos come out violet-magenta with lifted blacks. A new quick settings choice, Accurate, gives true colours by using Sony's own photo processing, at about 4 frames per second, so bursts are slower; Fast keeps 30. The live view is also adjusted to look closer to the photo. (<a href="https://github.com/lilaccamera/lilaccamera/commit/3ca889d0"><code>3ca889d</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/4e5bfbb1"><code>4e5bfbb</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/611065c0"><code>611065c</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/8853928c"><code>8853928</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/9bde3a42"><code>9bde3a4</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/e397c24f"><code>e397c24</code></a>)</li>
+<li><strong>The screen lights your face as a flash.</strong> The front camera has no flash, so Flash on now turns the screen white and its backlight to full for the shot. The white stays until the whole capture, merged shots included, has ended. It works in Photo and Portrait. (<a href="https://github.com/lilaccamera/lilaccamera/commit/767760f1"><code>767760f</code></a>)</li>
+<li><strong>The front camera starts at 2 MP, with its own size setting.</strong> The 2 MP size gives cleaner photos in dim light, while larger front sizes come out with crushed black shadows and garish colours at high sensitivity. Full size is one tap away, and a size you chose earlier is kept. (<a href="https://github.com/lilaccamera/lilaccamera/commit/11794c95"><code>11794c9</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/fa73d5e3"><code>fa73d5e</code></a>)</li>
+<li><strong>Night always uses 2 MP on the front camera.</strong> Whatever size Photo mode has chosen, Night uses 2 MP, and your choice comes back when you leave Night. Quick settings show it as a fixed 2 MP. (<a href="https://github.com/lilaccamera/lilaccamera/commit/ccc58a44"><code>ccc58a4</code></a>)</li>
+<li><strong>No more brightness flicker at full size.</strong> On the front camera in Photo mode at full size, the live view's brightness no longer swings several times a second. The app sends one small focus nudge just after the preview starts and puts focus back after about a second. (<a href="https://github.com/lilaccamera/lilaccamera/commit/104c2af3"><code>104c2af</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/3b36edd2"><code>3b36edd</code></a>)</li>
+<li><strong>Switching to a camera without manual exposure no longer freezes the readings.</strong> After going from a camera with manual ISO and shutter to one without, such as the front camera, the other camera froze its readings and greyed out exposure adjustment until restart. Such a camera now always meters automatically. (<a href="https://github.com/lilaccamera/lilaccamera/commit/68999a61"><code>68999a6</code></a>)</li>
+</ul>
+<h3 id="video-and-slow-motion">Video and slow motion<a class="headerlink" href="#video-and-slow-motion" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>960 frames per second slow motion.</strong> On the Xperia XZ1 Compact the app can now record Sony's super slow motion. Sony's photo service only talks to a privileged system app, so a small companion app does the recording and Lilac talks to it. Only Lilac may use it. (<a href="https://github.com/lilaccamera/lilaccamera/commit/20ddd3e5"><code>20ddd3e</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/d2f30f4e"><code>d2f30f4</code></a>)</li>
+<li><strong>60 fps at 1080p and 120 fps at 720p.</strong> With the Lilac Sony Bridge, Video offers two more frame rates through Sony's own video mode. Lilac draws the frames itself, so looks, sound and Pause work as in normal video, and 120 fps files carry the rate so other apps read them correctly. (<a href="https://github.com/lilaccamera/lilaccamera/commit/b4cae104"><code>b4cae10</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/ffe5ecaf"><code>ffe5eca</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/0683beae"><code>0683bea</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/2b7e64d7"><code>2b7e64d</code></a>)</li>
+<li><strong>Sony's video stabilisers.</strong> Stabilise now steps through Off, EIS+, Steady (SteadyShot) and Active (Intelligent Active), offering each only at the sizes and rates where it works. (<a href="https://github.com/lilaccamera/lilaccamera/commit/adccee53"><code>adccee5</code></a>)</li>
+<li><strong>The gallery plays 120 fps videos slowed.</strong> A 120 fps video opens four times slower, with a switch to full speed, and Share and Export ask Slowed or Full speed. (<a href="https://github.com/lilaccamera/lilaccamera/commit/11010885"><code>1101088</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/585f6305"><code>585f630</code></a>)</li>
+<li><strong>Slow-mo switch and burst button.</strong> In Video mode a Slow-mo item in quick settings (shown only where available) turns it on for the next recording, at 720p with 177-frame bursts. While recording, the camera key or a footer icon fires the burst. Choosing another resolution turns it off with a note, and torch and stabilisation are greyed out. (<a href="https://github.com/lilaccamera/lilaccamera/commit/75da1591"><code>75da159</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/b396ecb9"><code>b396ecb</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/1210c486"><code>1210c48</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/1062d113"><code>1062d11</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/4d297053"><code>4d29705</code></a>)</li>
+<li><strong>Slow-motion videos have continuous sound.</strong> The microphone is recorded separately and laid onto the video afterwards, silent over the slow part. Gaps are filled with silence, because the gallery's player used to stall where the burst starts. (<a href="https://github.com/lilaccamera/lilaccamera/commit/d2f30f4e"><code>d2f30f4</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/5ecf21de"><code>5ecf21d</code></a>)</li>
+<li><strong>Progress and a warning for slow motion.</strong> While the phone reads out a burst, a pill counts the frames as they arrive and shows a check mark when all are in. A "Too dark for slow-mo" pill appears when the shot would need an ISO above 1600. (<a href="https://github.com/lilaccamera/lilaccamera/commit/1062d113"><code>1062d11</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/75da1591"><code>75da159</code></a>)</li>
+<li><strong>Recording stops and saves before the phone overheats.</strong> Android does not report heat on this phone, so a recording could run until the camera was killed and the file lost. The app now reads the camera sensor, battery and board temperatures itself, shows a warming gauge, and stops with a dialog saying what stopped it and how far to cool. (<a href="https://github.com/lilaccamera/lilaccamera/commit/9b756866"><code>9b75686</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/53aaff04"><code>53aaff0</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/b34b6df3"><code>b34b6df</code></a>)</li>
+<li><strong>Pause and Resume keep the picture in video.</strong> After resuming, the file had sound but the picture stopped at the first pause, because frames arriving during the pause blocked the camera. Those frames are now discarded, so the picture continues. (<a href="https://github.com/lilaccamera/lilaccamera/commit/bf725f49"><code>bf725f4</code></a>)</li>
+<li><strong>The recording time sits in a centred pill.</strong> While recording, the time shows in a pill at the centre of the top line (amber or red when the phone is hot), with the remaining recording time beside it once under 20 minutes of storage are left. Paused, a pause mark replaces the blinking dot. (<a href="https://github.com/lilaccamera/lilaccamera/commit/23009289"><code>2300928</code></a>)</li>
+</ul>
+<h2 id="gcam-processing-and-memory">GCam processing and memory<a class="headerlink" href="#gcam-processing-and-memory" title="Permanent link">&para;</a></h2>
+<p>Merging frames the way GCam does, and making it fit in 4 GB of memory.</p>
+<h3 id="photo-and-night">Photo and Night<a class="headerlink" href="#photo-and-night" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Night mode on the dial.</strong> Night is now a mode of its own. Every shot merges 6 to 12 frames on Auto, planned for low light after the phone measures how much it shakes. A Fast or Accurate switch and a "Hold still" message guide you. (<a href="https://github.com/lilaccamera/lilaccamera/commit/6af567e4"><code>6af567e</code></a>)</li>
+<li><strong>Night suggestion in dim light.</strong> The phone's light sensor reading shows on the top line when it is dark. After two seconds of dim light, Photo mode offers a button that switches to Night. (<a href="https://github.com/lilaccamera/lilaccamera/commit/6af567e4"><code>6af567e</code></a>)</li>
+<li><strong>Merged photos start from the steadiest shot.</strong> The app uses the phone's motion sensor to find the steadiest of the first four shots and lines the others up on it. This also works on the front camera and when some shots have no motion data. (<a href="https://github.com/lilaccamera/lilaccamera/commit/414297c4"><code>414297c</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/e5740b36"><code>e5740b3</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/b431298d"><code>b431298</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/f8267edd"><code>f8267ed</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/31329845"><code>3132984</code></a>)</li>
+<li><strong>Less colour noise in merged dim-light photos.</strong> The merge used to mistake ordinary noise for movement and barely used most frames. It now measures each frame's real noise first. At ISO 5120 it uses 7.2 frames' worth of 12 instead of 1.7, and colour noise is halved. (<a href="https://github.com/lilaccamera/lilaccamera/commit/4debfa12"><code>4debfa1</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/aef51ae8"><code>aef51ae</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/72d9dd17"><code>72d9dd1</code></a>)</li>
+<li><strong>Pink, hazy shadows and magenta tints removed in dim light.</strong> Dim shots, worst on the front camera, had pink shadows and a magenta cast. Each photo is now measured and corrected, and dim ones get a gentle shadow lift. HDR and RAW photos are unchanged. (<a href="https://github.com/lilaccamera/lilaccamera/commit/ad7ae193"><code>ad7ae19</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/0cda30f3"><code>0cda30f</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/c2da80d5"><code>c2da80d</code></a>)</li>
+<li><strong>Low-light photos are as bright as the preview.</strong> The low-light plan aimed one stop darker than the normal preview and now matches it. The brightening of merged dark photos was also too weak (about 1.18 times instead of 1.44) and is now applied correctly. (<a href="https://github.com/lilaccamera/lilaccamera/commit/ea83c429"><code>ea83c42</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/7171cf42"><code>7171cf4</code></a>)</li>
+<li><strong>Darker bursts when the sky or lights would burn out.</strong> When the viewfinder shows bright areas turned pure white, a RAW burst is shot 1 to 3 stops darker. The merge then brings the shadows back up, so those highlights stay recoverable. (<a href="https://github.com/lilaccamera/lilaccamera/commit/5b125a70"><code>5b125a7</code></a>)</li>
+<li><strong>Merged bursts keep their natural brightness.</strong> A merged burst used to be pulled back down to match the dark viewfinder, undoing the cleaner shadows. Several small mistakes were fixed, so the final photo keeps the brighter, better-exposed result. (<a href="https://github.com/lilaccamera/lilaccamera/commit/7273c43e"><code>7273c43</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/f9e6c2af"><code>f9e6c2a</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/357f5e6d"><code>357f5e6</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/b6168576"><code>b616857</code></a>)</li>
+<li><strong>HDR shots adapt to the scene.</strong> Photo mode's HDR used to take fixed darker and brighter shots. It now picks how much darker or brighter from the bright and near-black areas in the viewfinder, and uses a longer exposure on a steady phone so shadows are less noisy. (<a href="https://github.com/lilaccamera/lilaccamera/commit/6dc3b227"><code>6dc3b22</code></a>)</li>
+<li><strong>HDR shots fire the moment you press.</strong> The app watches how steady the phone is while the viewfinder is open, so it no longer waits half a second. The tap on the shutter no longer counts as shake, so a tripod gets the longer, cleaner exposure. (<a href="https://github.com/lilaccamera/lilaccamera/commit/199c8dd8"><code>199c8dd</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/89019228"><code>8901922</code></a>)</li>
+<li><strong>Bracketing is a switch again, on by default.</strong> The brighter and darker shots of Photo mode could not be reached any more, because upstream fixed the setting off. Quick settings and Settings now have a <strong>Bracketing</strong> switch beside Multi-frame. It works on the back camera only (the front camera cannot change exposure between shots, so its extra shots came out the same) and at 12 MP or less (at full size a bracketed stack runs a 4 GB phone out of memory). How it works, and how it differs from Pro's darker burst: <a href="../hdr/#exposure-bracketing">Exposure bracketing</a>. (<a href="https://github.com/lilaccamera/lilaccamera/commit/f2512a96"><code>f2512a9</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/7c4d7730"><code>7c4d773</code></a>)</li>
+<li><strong>Photo mode starts at 12 MP with 5 frames and bracketing.</strong> A new install, or one that never chose these, gets the 12 MP size cap, Multi-frame on at 5 frames and Bracketing on. Anyone who had picked a size or a frame count keeps it. (<a href="https://github.com/lilaccamera/lilaccamera/commit/ccfd031e"><code>ccfd031</code></a>)</li>
+<li><strong>A tripod no longer counts as shaky.</strong> The motion sensor read a small steady offset, so the low-light plan always chose its shortest exposure. Only real hand tremor is counted now. (<a href="https://github.com/lilaccamera/lilaccamera/commit/caf0538e"><code>caf0538</code></a>)</li>
+<li><strong>Multi-frame shots stay inside the camera's allowed ISO range.</strong> When the chosen ISO was above what the camera accepts for manual settings, the request was refused. The value is now brought down into range with the same exposure time. (<a href="https://github.com/lilaccamera/lilaccamera/commit/c3961698"><code>c396169</code></a>)</li>
+</ul>
+<h3 id="pro-mode-and-raw">Pro mode and RAW<a class="headerlink" href="#pro-mode-and-raw" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Pro mode RAW works on the Xperia XZ1 Compact.</strong> On the LineageOS build with the RAW add-on by sunplex07, a RAW-only request made the camera crash. The app now also asks for a full-size JPEG with each RAW shot and discards it, which fixes this. (<a href="https://github.com/lilaccamera/lilaccamera/commit/f96b0f33"><code>f96b0f3</code></a>)</li>
+<li><strong>Corners of RAW photos are no longer dark.</strong> The rear camera gave no useful correction for corner darkening, so corners got about 0.23 of the centre's light. A correction measured on this phone is now applied and saved in the RAW file, bringing corners to 0.93 to 0.97. (<a href="https://github.com/lilaccamera/lilaccamera/commit/6f36b8e2"><code>6f36b8e</code></a>)</li>
+<li><strong>RAW photos with noise reduction no longer come out black.</strong> Any RAW photo with brightness or colour noise reduction turned on came out solid black. The cause was fixed, which also saves one full-size copy per photo. (<a href="https://github.com/lilaccamera/lilaccamera/commit/11a5c1c3"><code>11a5c1c</code></a>)</li>
+<li><strong>Pro photos keep their deep shadows.</strong> Photos developed in the background came out with darker, crushed shadows than the same shot developed directly. Both now handle black the same way, and older RAW files from the app also develop correctly. (<a href="https://github.com/lilaccamera/lilaccamera/commit/33e0f722"><code>33e0f72</code></a>)</li>
+<li><strong>Re-render a finished Pro photo as a copy.</strong> Develop a Pro photo again with different settings, such as noise reduction, sharpening or exposure, into a new photo next to the untouched original. Start it from the photo's More sheet, or from several selected photos in the gallery. (<a href="https://github.com/lilaccamera/lilaccamera/commit/2feac61f"><code>2feac61</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/9742ad31"><code>9742ad3</code></a>)</li>
+<li><strong>A built-in noise profile measured on this phone.</strong> The profile comes from a tripod test of 20 shots from ISO 40 to 2884. The phone's own profile is up to 3.7 times off, so the measured one is now the default and the system one is labelled as inaccurate here. (<a href="https://github.com/lilaccamera/lilaccamera/commit/f9adbee1"><code>f9adbee</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/526df14b"><code>526df14</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/add4dc53"><code>add4dc5</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/0abca2a5"><code>0abca2a</code></a>)</li>
+<li><strong>The camera's JPEG in Pro mode matches the finished photo.</strong> It used to be saved as the full sensor frame and could be turned or flipped differently. It is now cropped to the shot's shape and turned the same way. (<a href="https://github.com/lilaccamera/lilaccamera/commit/8ad6f419"><code>8ad6f41</code></a>)</li>
+<li><strong>HDR ratio slider in Pro quick settings.</strong> A slider from 1 to 20 limits how far the HDR merge may go. The photo info card also shows the limit and the ratio actually used. (<a href="https://github.com/lilaccamera/lilaccamera/commit/0e6b1bdf"><code>0e6b1bd</code></a>)</li>
+<li><strong>Pro starts at 8 frames and an HDR ratio of 8.</strong> New installs stack 8 RAW frames, and the HDR ratio limit starts at 8 instead of GCam's 9.8. Settings already chosen are kept. (<a href="https://github.com/lilaccamera/lilaccamera/commit/79b0e46f"><code>79b0e46</code></a>)</li>
+<li><strong>Pro mode says when something is unavailable.</strong> ISO and shutter controls are greyed out on cameras without manual exposure, such as the front camera. Tapping a greyed Pro button explains why, and names the RAW add-on by sunplex07 on this phone's back camera. (<a href="https://github.com/lilaccamera/lilaccamera/commit/b3098e3a"><code>b3098e3</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/6d9e0279"><code>6d9e027</code></a>)</li>
+</ul>
+<h3 id="memory-and-keeping-the-app-alive">Memory and keeping the app alive<a class="headerlink" href="#memory-and-keeping-the-app-alive" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Pro photos are developed in the background, one at a time.</strong> After a single-frame Pro shot, the RAW file is saved at once and developed later by a separate helper that exits after each photo and hands its graphics memory back. Swiping the app away from the recent apps screen does not stop it. Before, one 19 MP Pro photo could get the app killed by Android's low-memory killer. (<a href="https://github.com/lilaccamera/lilaccamera/commit/8216df71"><code>8216df7</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/eb437565"><code>eb43756</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/8b41c8e7"><code>8b41c8e</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/a2c7154c"><code>a2c7154</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/3bac2cb1"><code>3bac2cb</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/3dfe5678"><code>3dfe567</code></a>)</li>
+<li><strong>HDR merging fits in memory on 4 GB phones.</strong> Merging three exposures at 19 MP used about 1.5 GB of GPU memory at its peak. The app now frees the temporary pictures as soon as they are merged, with the same result and a peak about a third lower. (<a href="https://github.com/lilaccamera/lilaccamera/commit/1cadd811"><code>1cadd81</code></a>)</li>
+<li><strong>Big work areas are freed sooner.</strong> The full-size RAW work areas (about 612 MB) are released at the end of each render. The helper also frees its full-size pictures before building the HDR versions, cutting its peak from 1.42 GB with identical output. (<a href="https://github.com/lilaccamera/lilaccamera/commit/8bfff7cf"><code>8bfff7c</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/c5fecdef"><code>c5fecde</code></a>)</li>
+<li><strong>Renders wait for free memory and step aside for Pro shots.</strong> Renders started with little free memory, or beside a Pro shot, were killed. The queue now waits up to 1 minute for 450 MB free (showing "Waiting for free memory") and for a Pro shot to be saved, and runs at lower priority so the render is stopped rather than the app. (<a href="https://github.com/lilaccamera/lilaccamera/commit/064d9de8"><code>064d9de</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/7ab20b1d"><code>7ab20b1</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/e11a8d83"><code>e11a8d8</code></a>)</li>
+<li><strong>A stopped render continues instead of starting over.</strong> After the RAW development the app saves a checkpoint, so a retry skips the 20-25 s development and keeps the HDR versions. A photo that really fails 3 times is marked failed with its RAW file kept. The queue also restarts itself if Android kills it. (<a href="https://github.com/lilaccamera/lilaccamera/commit/a9a62964"><code>a9a6296</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/4d98e4b4"><code>4d98e4b</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/93609ed7"><code>93609ed</code></a>)</li>
+<li><strong>Background blur fits this phone's GPU.</strong> The blur now works on a smaller copy here, and the editor's GPU jobs take turns with the preview first. Before, a blur started during a preview crashed the GPU and every later render failed until the app restarted. A test picture went from a timeout to 5 of 5 clean renders. (<a href="https://github.com/lilaccamera/lilaccamera/commit/705750a6"><code>705750a</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/c0a3bafe"><code>c0a3baf</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/bc383388"><code>bc38338</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/944395e1"><code>944395e</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/57268053"><code>5726805</code></a>)</li>
+<li><strong>The photo view uses less graphics memory.</strong> The photo view's preview held about 300 MB of graphics memory for good, which starved the background development. It now uses a picture matched to the screen, so deep zoom is a little softer. (<a href="https://github.com/lilaccamera/lilaccamera/commit/de8ed4af"><code>de8ed4a</code></a>)</li>
+<li><strong>"About memory" help.</strong> The Processing photos screen explains that the app can be swiped away from the recent apps screen to free memory, and an info button explains why about 1 GB is needed and why not to use Force stop. After two stops of the same photo, a message says to swipe the app away and restart the phone if needed. (<a href="https://github.com/lilaccamera/lilaccamera/commit/a4a675fe"><code>a4a675f</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/1d11842d"><code>1d11842</code></a>)</li>
+<li><strong>A warning before reopening the camera while a photo is still processing.</strong> Going from the gallery back to the camera while a back-camera stack is being merged could run a 4 GB phone out of memory, so Android closed other apps and the camera stuttered. The gallery and photo view now ask first: stay, go to the home screen, or open the camera anyway. Bracketed photos count too. (<a href="https://github.com/lilaccamera/lilaccamera/commit/b72d16d0"><code>b72d16d</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/d8853971"><code>d885397</code></a>)</li>
+</ul>
+<h2 id="the-rest-of-the-app">The rest of the app<a class="headerlink" href="#the-rest-of-the-app" title="Permanent link">&para;</a></h2>
+<p>Speed, the camera screen, the editor, the gallery, reliability and housekeeping.</p>
+<h3 id="starting-up-and-switching-modes">Starting up and switching modes<a class="headerlink" href="#starting-up-and-switching-modes" title="Permanent link">&para;</a></h3>
+<p>Lilac opens its camera sooner and switches modes with fewer stalls. These times were measured on an Xperia XZ1 Compact with a release build (the kind you install), in seconds from tapping the icon, as the middle value of 4 to 7 cold starts. "Before" is Lilac as it was before this work.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Before</th>
+<th>Now</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Camera connected</td>
+<td>1.02</td>
+<td><strong>0.40</strong></td>
+</tr>
+<tr>
+<td>First picture, Photo mode</td>
+<td>1.78</td>
+<td><strong>1.41</strong></td>
+</tr>
+<tr>
+<td>First picture, Pro mode</td>
+<td>1.59</td>
+<td><strong>1.25</strong></td>
+</tr>
+<tr>
+<td>Video → Photo, tap to first picture</td>
+<td>1.45 (camera opened twice)</td>
+<td><strong>0.99</strong></td>
+</tr>
+<tr>
+<td>Photo → Pro, tap to first picture</td>
+<td>0.87</td>
+<td>0.81</td>
+</tr>
+</tbody>
+</table>
+<p>For comparison, Open Camera shows its first picture after 0.90 s and Aperture after 1.52 s on the same phone. Photo mode stays about 0.26 s slower than Pro because it asks the sensor for its full-size picture, which gives better stacked photos.</p>
+<ul>
+<li><strong>The camera starts before the screen is ready.</strong> Lilac opens the camera as soon as its settings are read and sets up the photo session before the viewfinder exists, instead of waiting for the screen. The camera connects at 0.40 s instead of 1.02 s. (<a href="https://github.com/lilaccamera/lilaccamera/commit/fd4580d8"><code>fd4580d</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/c44a03c1"><code>c44a03c</code></a>)</li>
+<li><strong>The start screen no longer waits for your gallery.</strong> The splash used to wait until the gallery had loaded. Now the viewfinder shows first, and the gallery list and other preparation run afterwards. (<a href="https://github.com/lilaccamera/lilaccamera/commit/b24184b0"><code>b24184b</code></a>)</li>
+<li><strong>Video → Photo opens the camera once, not twice.</strong> The old switch rebuilt the viewfinder twice, so the camera opened twice, and the second time cost about half a second. (<a href="https://github.com/lilaccamera/lilaccamera/commit/2afcb36a"><code>2afcb36</code></a>)</li>
+<li><strong>Changing mode no longer waits for the settings to be saved.</strong> Switching between Photo and Pro asked the camera to reopen only after saving settings, which took 0.25 to 0.3 s. Lilac now reopens the camera first and saves in the background. (<a href="https://github.com/lilaccamera/lilaccamera/commit/8fbf0d0e"><code>8fbf0d0</code></a>)</li>
+<li><strong>Changing the look (LUT) no longer restarts the camera.</strong> A LUT is a colour filter. Swapping it used to rebuild the camera session although nothing in the session depended on it. (<a href="https://github.com/lilaccamera/lilaccamera/commit/55880345"><code>5588034</code></a>)</li>
+<li><strong>The viewfinder opens on the camera's first real picture.</strong> It used to start sliding open 150 ms after the preview began, over black, so the picture appeared halfway through the slide and mode switches showed a black cover for 1.07 to 1.32 s. Now the opening waits for the first drawn frame and fades in over 150 ms; Photo ↔ Pro has no cover at all. (<a href="https://github.com/lilaccamera/lilaccamera/commit/9c2dd664"><code>9c2dd66</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/8afbac88"><code>8afbac8</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/87541bb6"><code>87541bb</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/01b9bd23"><code>01b9bd2</code></a>)</li>
+<li><strong>A plain black start screen.</strong> The splash screen is plain black, without an icon. (<a href="https://github.com/lilaccamera/lilaccamera/commit/5e34fff8"><code>5e34fff</code></a>)</li>
+<li><strong>A new start opens in Photo mode.</strong> The camera no longer comes up in Video just because the last session ended there. In a test the first picture appeared at 1.16 s in Photo mode, against 1.26 s when the app started in Video mode. (<a href="https://github.com/lilaccamera/lilaccamera/commit/4ee629d9"><code>4ee629d</code></a>)</li>
+</ul>
+<h3 id="portrait">Portrait<a class="headerlink" href="#portrait" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Portrait mode on the mode dial.</strong> The viewfinder keeps the tracked face sharp and softly blurs the surroundings, using a small copy of the picture so it stays light. Quick blur is the default, and Depth blur, which needs the downloadable depth model, is chosen in quick settings. (<a href="https://github.com/lilaccamera/lilaccamera/commit/705f9c31"><code>705f9c3</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/5b92c69b"><code>5b92c69</code></a>)</li>
+<li><strong>Portrait keeps up to five faces sharp in the viewfinder.</strong> It uses the phone's own face detection, and each face glides and fades smoothly so the picture does not jump when faces come, go or swap. The closest face sets the blur strength. (<a href="https://github.com/lilaccamera/lilaccamera/commit/b6a8f8e4"><code>b6a8f8e</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/d1151185"><code>d115118</code></a>)</li>
+<li><strong>Natural bokeh by default, and a Bokeh style tile.</strong> Portrait used the Swirl bokeh, which stretches bright spots into rings. It now defaults to Natural, and a quick settings tile cycles Natural, Swirl and Bubble. The photo editor opens with the chosen style. (<a href="https://github.com/lilaccamera/lilaccamera/commit/06b843a2"><code>06b843a</code></a>)</li>
+<li><strong>Set the aperture in Portrait.</strong> An aperture ruler from f/1.0 to f/16 leads the manual values, and the saved photo and viewfinder blur follow it. The shutter button also shows a person mark so Portrait reads apart from Photo. (<a href="https://github.com/lilaccamera/lilaccamera/commit/62da83e2"><code>62da83e</code></a>)</li>
+<li><strong>Blur stays strong when you focus on a face.</strong> With a depth map, tapping a face used the depth range of the whole person, so the background barely blurred. The sharp range now comes from around the tapped point, and the person stays sharp. (<a href="https://github.com/lilaccamera/lilaccamera/commit/98f307be"><code>98f307b</code></a>)</li>
+<li><strong>No viewfinder blur around a far-away face.</strong> A small, distant face now gets no live blur, since it would cover almost the whole picture. The blur grows smoothly as the face gets bigger in the frame. (<a href="https://github.com/lilaccamera/lilaccamera/commit/03cdb92e"><code>03cdb92</code></a>)</li>
+<li><strong>The background blur is no longer made twice.</strong> After a multi-frame Photo shot the blur was rendered, thrown away and rendered again for the automatic save. The first result is now kept and reused. (<a href="https://github.com/lilaccamera/lilaccamera/commit/e60fca6b"><code>e60fca6</code></a>)</li>
+<li><strong>A short Portrait guide instead of a pop-up.</strong> A small "About Portrait" button offers a four-step guide covering faces, Quick and Depth blur, the subject cut-out and later editing. A long press on the Portrait blur tile reopens it. (<a href="https://github.com/lilaccamera/lilaccamera/commit/1a40c10e"><code>1a40c10</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/fe3d5431"><code>fe3d543</code></a>)</li>
+</ul>
+<h3 id="the-camera-screen">The camera screen<a class="headerlink" href="#the-camera-screen" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>The shutter shows when it cannot take a shot.</strong> The centre of the shutter turns grey with a white ring breathing around it while a shot would be refused, and it pops with a light tick when ready again. If you press anyway, a message says no photo was taken, so you do not press twice. (<a href="https://github.com/lilaccamera/lilaccamera/commit/b398df19"><code>b398df1</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/aa743d80"><code>aa743d8</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/aec3740d"><code>aec3740</code></a>)</li>
+<li><strong>A mode dial replaces the Photo/Pro/Video pill.</strong> A dial around the shutter holds Night, Portrait, Pro, Photo and Video. A sideways push opens the list with a click on each mode, and the camera starts loading the chosen mode as your finger lifts. The gallery thumbnail and camera switch slide away while the list is open. (<a href="https://github.com/lilaccamera/lilaccamera/commit/782af3bb"><code>782af3b</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/0f37ed93"><code>0f37ed9</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/310c0fd5"><code>310c0fd</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/631ff68f"><code>631ff68</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/4bd5cd0c"><code>4bd5cd0</code></a>)</li>
+<li><strong>A thumbwheel, pill or collar replaces the zoom bar.</strong> The zoom control is chosen in Settings › Setup › Interface. The <strong>thumbwheel</strong> (default) is a wheel above the shutter: its rim follows your finger, a stop holds it for a moment with a tick, a flick coasts on, and a tap on a number goes there. The <strong>pill</strong> is a simple bar with a white disc that works the same way. The <strong>collar</strong> is a curved band that zooms faster the harder you pull it sideways, left to zoom in, and springs back. Over a tall picture the wheel and pill are drawn see-through, with white lines and numbers. While you zoom, the note line shows the zoom and its 35 mm focal length, and pinch keeps the full range. (<a href="https://github.com/lilaccamera/lilaccamera/commit/dc12f0e0"><code>dc12f0e</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/40c61d79"><code>40c61d7</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/64820b44"><code>64820b4</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/dabfe034"><code>dabfe03</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/ab524b10"><code>ab524b1</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/91d2cacd"><code>91d2cac</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/ba0054ee"><code>ba0054e</code></a>)</li>
+<li><strong>Try the zoom controls in their settings.</strong> The Zoom control sheet shows the thumbwheel, pill and collar working side by side with the phone's own stops. They share one zoom, so turning one moves the others, and a tap on a name picks it. (<a href="https://github.com/lilaccamera/lilaccamera/commit/0fb0eef8"><code>0fb0eef</code></a>)</li>
+<li><strong>A Looks button replaces the old colour-style panel.</strong> One sheet slides up from the bottom with a strip of look thumbnails floating over the live picture. Intensity, colour recipe and frame controls sit below it. A tap on the picture, a drag down or Back closes it. (<a href="https://github.com/lilaccamera/lilaccamera/commit/0d41e596"><code>0d41e59</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/05354ace"><code>05354ac</code></a>)</li>
+<li><strong>The Looks panel is quick-settings style.</strong> Its header row is gone: content management is a <strong>Manage</strong> tile at the end of the look strip, look tiles are smaller, and the chosen look gets a white ring and a white name. (<a href="https://github.com/lilaccamera/lilaccamera/commit/d165bd2f"><code>d165bd2</code></a>)</li>
+<li><strong>One accent colour for "on", Sony orange by default.</strong> The mode name, the manual needle, Night's pill, the marks on the picture and the editor's curve points all use the accent from the appearance settings instead of their own amber. Its default changes from yellow to Sony orange, and Restore default brings it back. (<a href="https://github.com/lilaccamera/lilaccamera/commit/e114dab0"><code>e114dab</code></a>)</li>
+<li><strong>The shutter's progress ring finishes when the shots do.</strong> The ring shows how long to hold still. It used to run ahead on a slow burst and then freeze for up to 2.7 s. It now moves steadily, learns the real time between frames and never runs backwards. (<a href="https://github.com/lilaccamera/lilaccamera/commit/20b5838a"><code>20b5838</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/0ac162f2"><code>0ac162f</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/aa22d66e"><code>aa22d66</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/4cc612eb"><code>4cc612e</code></a>)</li>
+<li><strong>A bigger, calmer shutter.</strong> The shutter grows slightly and has a thin warm-grey ring. Progress, the busy state and the multiple-exposure count now use that thin ring instead of a thick one that shrank the button. After a mode switch only the ring breathes, in the new mode's colour. (<a href="https://github.com/lilaccamera/lilaccamera/commit/31fe2653"><code>31fe265</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/64ddb856"><code>64ddb85</code></a>)</li>
+<li><strong>A framed thumbnail and camera switch on an even grid.</strong> The footer controls sit evenly spaced. The gallery thumbnail is a framed photo, and the camera switch is two turning arrows in a matching frame that spin half a turn when you tap. (<a href="https://github.com/lilaccamera/lilaccamera/commit/6457ff74"><code>6457ff7</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/55f7b12c"><code>55f7b12</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/7204ca65"><code>7204ca6</code></a>)</li>
+<li><strong>One processing indicator on the thumbnail for all modes.</strong> The thumbnail's edge shows unfinished photos the same way in Photo and Pro: a running arc while processing, dots while waiting, a pause sign when paused, amber after repeated memory stops. One count shows all unfinished photos. (<a href="https://github.com/lilaccamera/lilaccamera/commit/2f20723f"><code>2f20723</code></a>)</li>
+<li><strong>Smoother changes of picture shape.</strong> On a mode switch, shape change or camera flip, the last frame is held and glides to the new picture while the camera restarts, then fades to the live view. A mode chosen while the camera is still loading waits for it. (<a href="https://github.com/lilaccamera/lilaccamera/commit/62f32661"><code>62f3266</code></a>)</li>
+<li><strong>A taller picture with small marks along the top edge.</strong> The top bar is gone, so 4:3, 3:2 and XPAN (wide panorama) pictures gain its height. Small marks show settings that differ from the default, such as timer or flash, and a tap opens quick settings. These marks stay in place at any picture shape. (<a href="https://github.com/lilaccamera/lilaccamera/commit/1bed28d8"><code>1bed28d</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/0ddb9f3f"><code>0ddb9f3</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/04f51dca"><code>04f51dc</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/624aa034"><code>624aa03</code></a>)</li>
+<li><strong>Multiple exposure buttons on the picture's bottom edge.</strong> Discard, Undo and Done sit above the manual values from the first shutter press. Discard asks once when there are two or more shots, and Done waits for two shots. The shot count shows at once on the top mark and the shutter ring. (<a href="https://github.com/lilaccamera/lilaccamera/commit/bd51f35e"><code>bd51f35</code></a>)</li>
+<li><strong>Scene and condition icons on the top line.</strong> Using the phone's own detection, small icons show what the camera recognises, such as document, backlight, low light, food, portrait, motion, tripod or macro. They are hints only and change no setting. (<a href="https://github.com/lilaccamera/lilaccamera/commit/3bd1e2f5"><code>3bd1e2f</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/829bc752"><code>829bc75</code></a>)</li>
+<li><strong>Short guides for Photo and Pro.</strong> One sheet shows step-by-step guides: three steps for Pro and "How to use Lilac" in five for Photo. Each is offered in a pill until opened once, and reopens from the mode name in quick settings. The pill steps aside while a manual value's ruler is open. (<a href="https://github.com/lilaccamera/lilaccamera/commit/383dc2c1"><code>383dc2c</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/0c63f022"><code>0c63f02</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/89b10a75"><code>89b10a7</code></a>)</li>
+<li><strong>A shutter press cancels the self-timer.</strong> A second press during the countdown used to start another countdown and take two photos. It now cancels the timer and takes no photo, and a grey cross on the shutter reads "Cancel timer". (<a href="https://github.com/lilaccamera/lilaccamera/commit/bf037a00"><code>bf037a0</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/8ce6d5bf"><code>8ce6d5b</code></a>)</li>
+<li><strong>The flash blinks as a self-timer lamp.</strong> During the countdown the back camera's flash blinks, faster near the end, so people in front can tell when the shot comes. It only blinks when the camera sees a face and the flash is off. (<a href="https://github.com/lilaccamera/lilaccamera/commit/df796211"><code>df79621</code></a>)</li>
+<li><strong>The self-timer countdown turns with the phone.</strong> The big countdown number stayed upright in landscape while the other controls turned. It now turns with them. (<a href="https://github.com/lilaccamera/lilaccamera/commit/7c13ef42"><code>7c13ef4</code></a>)</li>
+<li><strong>Short notes appear in a pill instead of pop-up messages.</strong> Notes such as "Locked while recording" and "Photo saved" show for about 1.6 s in the same pill that offers the guides. (<a href="https://github.com/lilaccamera/lilaccamera/commit/3c565b8e"><code>3c565b8</code></a>)</li>
+<li><strong>Line icons everywhere on the camera screen.</strong> The XPAN side bar, quick settings, the empty gallery mark and the recording buttons use matching thin line icons, and the XPAN buttons turn with the phone. (<a href="https://github.com/lilaccamera/lilaccamera/commit/a64c84f9"><code>a64c84f</code></a>)</li>
+<li><strong>A soft shade under the footer over tall pictures.</strong> When the picture reaches below the top of the shutter, as 16:9 does in portrait, a soft dark gradient keeps the controls readable. (<a href="https://github.com/lilaccamera/lilaccamera/commit/8560ceda"><code>8560ced</code></a>)</li>
+<li><strong>Plain black camera background by default.</strong> The camera background is pure black, also when a custom background image is missing. (<a href="https://github.com/lilaccamera/lilaccamera/commit/d22d0f19"><code>d22d0f1</code></a>)</li>
+</ul>
+<h3 id="quick-settings-manual-controls-and-gestures">Quick settings, manual controls and gestures<a class="headerlink" href="#quick-settings-manual-controls-and-gestures" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Quick settings rise from the bottom as one sheet.</strong> A row of everyday settings floats on the picture and a tap steps to the next value. A list of the rest sits below, with the current mode's own settings first. The shade behind now covers the whole screen, and a tap on it closes the panel without taking a photo. (<a href="https://github.com/lilaccamera/lilaccamera/commit/19f82c0a"><code>19f82c0</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/a6660e9e"><code>a6660e9</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/1c72c7d2"><code>1c72c7d</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/70b2e4f7"><code>70b2e4f</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/7b9be8b4"><code>7b9be8b</code></a>)</li>
+<li><strong>Quick settings split into Shooting and Output tabs.</strong> Shooting holds what changes the shot, Output what changes the file. One row carries the tabs and the Toolbox, Content management and Settings icons, so the sheet keeps one height; tap a tab or swipe sideways to change. Groups have coloured titles (Lens, Stacking, Portrait in red, Exposure and HDR+ in magenta, Output and Sound in gold), which are off by default: a <strong>Group titles</strong> switch in Settings brings them back. The front camera shows one page without tabs and leaves out Bracketing and Ultra HDR, which it cannot use. Lens comes first, in Video too. (<a href="https://github.com/lilaccamera/lilaccamera/commit/653d887c"><code>653d887</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/f9d7999a"><code>f9d7999</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/d165bd2f"><code>d165bd2</code></a>)</li>
+<li><strong>Quick settings and Looks look like Sony's own app.</strong> Black panels at 82 % with rounded top corners, groups parted by a thin line, taller rows with bigger names, a light fill for the chosen choice, and larger tap areas for a 4.6" screen. Set-and-forget rows (Histogram, Camera JPEG, Ultra HDR, Codec, Microphone) are quieter. (<a href="https://github.com/lilaccamera/lilaccamera/commit/1a6863ac"><code>1a6863a</code></a>)</li>
+<li><strong>The everyday icons show their value.</strong> Timer seconds, the smile size, flash ON, 4K or the frame rate sit inside or beside the icon, in the accent when they change the shot, and the same marks repeat along the top edge. (<a href="https://github.com/lilaccamera/lilaccamera/commit/638ee289"><code>638ee28</code></a>)</li>
+<li><strong>Vertical swipes on the picture.</strong> Swiping down drops the everyday settings row onto the top edge. Swiping up hides it, or else shows the manual values on the bottom edge. A tap on the picture closes the row and focuses there. (<a href="https://github.com/lilaccamera/lilaccamera/commit/0d43ee60"><code>0d43ee6</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/4a079ae0"><code>4a079ae</code></a>)</li>
+<li><strong>Manual values show live readings and change by dragging.</strong> Each manual value shows a number, and on auto it shows the camera's current reading. Drag sideways to change a value and double-tap to return to auto. Values set by hand get an amber dot and stay as a compact line when the panel closes. (<a href="https://github.com/lilaccamera/lilaccamera/commit/e3166e0c"><code>e3166e0</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/60db1f3e"><code>60db1f3</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/be9eef30"><code>be9eef3</code></a>)</li>
+<li><strong>The manual values close by themselves.</strong> Outside Pro, the row of manual values closes five seconds after the last touch. Values you set stay on the picture's edge, and a tap opens the row again. (<a href="https://github.com/lilaccamera/lilaccamera/commit/41fe7f25"><code>41fe7f2</code></a>)</li>
+<li><strong>Resolution tile for Photo mode.</strong> A new quick setting (Full, 12 MP, 8 MP) limits the size of Photo mode pictures. On cameras of 8 MP or less, like the front camera, it is greyed out with a short explanation. (<a href="https://github.com/lilaccamera/lilaccamera/commit/4e23000b"><code>4e23000</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/8c799d9d"><code>8c799d9</code></a>)</li>
+<li><strong>Frame count presets on the tiles.</strong> The Photo mode multi-frame noise tile shows its frame count and steps Off, 3, 6, 10, 20 with each tap. Pro gets an HDR+ tile that steps 1, 2, 3 frames. Setting the count in Settings now also turns the feature on. (<a href="https://github.com/lilaccamera/lilaccamera/commit/267e604a"><code>267e604</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/f1ee5b19"><code>f1ee5b1</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/e8df50c1"><code>e8df50c</code></a>)</li>
+<li><strong>Sliders for shots and frame counts.</strong> The multiple-exposure row is a slider from Off to 2 to 9 shots, and moving it turns the feature on. The sliders are also longer, so values are easier to set. (<a href="https://github.com/lilaccamera/lilaccamera/commit/1dd3cd75"><code>1dd3cd7</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/c029234b"><code>c029234</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/2d0df650"><code>2d0df65</code></a>)</li>
+<li><strong>Long press on a tile opens its setting.</strong> Settings opens at that tile's setting, scrolls to it and flashes it once. Tiles with no setting of their own show a short explanation. (<a href="https://github.com/lilaccamera/lilaccamera/commit/68f5f372"><code>68f5f37</code></a>)</li>
+<li><strong>The look swipe steps through your favourites.</strong> A sideways swipe on the picture steps through your favourite looks only, while the film button opens all of them. The camera basics guide now says so. (<a href="https://github.com/lilaccamera/lilaccamera/commit/b65f2c21"><code>b65f2c2</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/1d32c695"><code>1d32c69</code></a>)</li>
+</ul>
+<h3 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Settings are six tabs with a bottom bar.</strong> Shooting and Video (red), Photo and Pro (magenta), Lens (purple) and Setup (gold), plus a Search tab. The old overview of twelve pages is gone; each page became a section of a tab. Back leaves Settings, and the pages are black with a coloured title bar. (<a href="https://github.com/lilaccamera/lilaccamera/commit/5a5dbd70"><code>5a5dbd7</code></a>)</li>
+<li><strong>Rows are shorter and choices open in sheets.</strong> Rows are flat and black, with a light switch. A description shows two lines, and a tap on a cut-off one opens it in place. Choices and sliders show their value at the right end and open a black bottom sheet, which closes with a light tick when you pick. The back arrow floats over the page instead of taking a row. (<a href="https://github.com/lilaccamera/lilaccamera/commit/dc0866b4"><code>dc0866b</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/a404f024"><code>a404f02</code></a>)</li>
+<li><strong>Search every setting.</strong> The last tab opens a field above the keyboard. Matches show their tab and section ("Setup › Controls"); a tap opens the tab, scrolls to the row and flashes it. It finds rows by name, section or choice, so "AgX" finds the rendering engine. Settings can also open at any row, which is what a long press on a quick-settings tile uses. (<a href="https://github.com/lilaccamera/lilaccamera/commit/8fb22995"><code>8fb2299</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/8faa27ca"><code>8faa27c</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/503dc328"><code>503dc32</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/15136ba6"><code>15136ba</code></a>)</li>
+<li><strong>Rows that do nothing are hidden.</strong> Grid style shows only while grid lines are on, and the custom shutter sounds only while the shutter sound is on. (<a href="https://github.com/lilaccamera/lilaccamera/commit/64820b44"><code>64820b4</code></a>)</li>
+</ul>
+<h3 id="the-photo-editor">The photo editor<a class="headerlink" href="#the-photo-editor" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>A new editor layout in the camera's style.</strong> The photo now sits above a block of tools, with Cancel, Undo, Redo, Full view, Compare and Save as icons over it. Back goes up one step, leaving with changes asks "Discard changes?", and sections with changes show dots. (<a href="https://github.com/lilaccamera/lilaccamera/commit/df3a4480"><code>df3a448</code></a>)</li>
+<li><strong>Look section.</strong> A compact strip of look thumbnails sits on the photo's bottom edge, with favourites and categories. The same section holds Frame, Preset (apply, copy and paste edits, or save your own) and a Live Photo switch. Frame and Preset are hidden for videos. (<a href="https://github.com/lilaccamera/lilaccamera/commit/1af2b584"><code>1af2b58</code></a>)</li>
+<li><strong>Crop section.</strong> Crop shows the whole photo with the frame over it, which you drag or move. Ratios include 1:1, 4:3, 3:2, 16:9, 21:9, XPAN and the camera's own, and Straighten, Rotate and Flip are built in. (<a href="https://github.com/lilaccamera/lilaccamera/commit/d7bbfbe4"><code>d7bbfbe</code></a>)</li>
+<li><strong>Light, Color, Effects and Detail use rulers.</strong> Each setting is a ruler and the photo updates as you drag. RAW photos get the RAW render's own Exposure, Highlights, Shadows, Whites and Blacks, re-rendered once when your finger lifts. A second tap explains a setting, a double tap restores it, and a long press shows the photo without that change. (<a href="https://github.com/lilaccamera/lilaccamera/commit/af67577b"><code>af67577</code></a>)</li>
+<li><strong>Curve group.</strong> Light › Curve draws the curve over the photo: tap to add a point and drag to move it, at about half the finger's speed so the finger does not hide it. All, red, green and blue channels each have a change dot, and Reset and Delete point undo edits. The curve area stays reachable on tall photos. (<a href="https://github.com/lilaccamera/lilaccamera/commit/14a0ee5e"><code>14a0ee5</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/dc6a34cf"><code>dc6a34c</code></a>)</li>
+<li><strong>Colour Mixer, Grading and Calibration.</strong> Mixer adjusts hue, strength and lightness for nine colours, Grading tints the shadows, mid-tones, highlights or the whole photo, and Calibration shifts the red, green and blue primaries. Values update live, and a double tap returns one to how it was when the editor opened. (<a href="https://github.com/lilaccamera/lilaccamera/commit/628c113d"><code>628c113</code></a>)</li>
+<li><strong>RAW development controls.</strong> Light › RAW offers ten development engines (the methods that turn RAW data into a picture), each with a card explaining it, plus Dynamic range, Base look and Sensor settings. The Fotufilm engine adds film stocks and grouped film controls. Looks already rendered show at once while the RAW develops again. (<a href="https://github.com/lilaccamera/lilaccamera/commit/8ee50657"><code>8ee5065</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/796d0300"><code>796d030</code></a>)</li>
+<li><strong>Rough preview while a RAW develops.</strong> While you move the tone rulers on a RAW photo, the picture is redrawn at once as an approximation that follows your finger, and the real develop replaces it when it arrives. (<a href="https://github.com/lilaccamera/lilaccamera/commit/a438b3d8"><code>a438b3d</code></a>)</li>
+<li><strong>Portrait section.</strong> Aperture is a ruler from f/1.2 to f/16 (Off switches the blur off), and you choose Quick or Depth blur per photo. A focus ring sets the sharp point, Bokeh offers Natural, Swirl or Bubble, and in Depth mode a Shallow to Deep ruler sets how much stays sharp. A preview shows the blur in about half a second. (<a href="https://github.com/lilaccamera/lilaccamera/commit/bc383388"><code>bc38338</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/3b130e83"><code>3b130e8</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/9f9c0ce1"><code>9f9c0ce</code></a>)</li>
+<li><strong>Fast previews with an HD switch.</strong> While editing, slow work (RAW changes, AI denoise, Portrait blur, JPEG noise reduction) runs on smaller copies, and Save does it in full. An HD switch previews everything at full size, and a line under the icons names each step. Cancel now discards RAW, AI denoise and blur changes too. (<a href="https://github.com/lilaccamera/lilaccamera/commit/944395e1"><code>944395e</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/57268053"><code>5726805</code></a>)</li>
+<li><strong>Previews no longer wait for AI denoise.</strong> AI denoise on the editor's copy took about 100 seconds on the GPU, and every preview had to wait. Previews now go in between its steps, and Save still runs it in one go. (<a href="https://github.com/lilaccamera/lilaccamera/commit/6ab5b964"><code>6ab5b96</code></a>)</li>
+<li><strong>Portrait blur no longer overloads the GPU.</strong> Dragging the aperture started a blur at every stop crossed, and a blur that had started could not be cancelled, so the GPU stayed busy. Now only the marker follows your finger and the blur applies when it lifts, while newer settings wait and run once with the newest values. (<a href="https://github.com/lilaccamera/lilaccamera/commit/4b872c8f"><code>4b872c8</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/5d490f4b"><code>5d490f4</code></a>)</li>
+<li><strong>Undo and redo.</strong> Each finished change is one undo step, up to 100, and Undo and Redo dim when there is nothing to step to. Undo opens the section of the changed setting. Importing a camera colour profile no longer overwrites unsaved changes. (<a href="https://github.com/lilaccamera/lilaccamera/commit/731f53ea"><code>731f53e</code></a>)</li>
+<li><strong>The right picture stays on screen.</strong> Switching sections or leaving Crop shows the new view only once its picture is ready, so the uncropped photo no longer flashes up. After picking a look, Crop also keeps showing its frame instead of the plain photo. (<a href="https://github.com/lilaccamera/lilaccamera/commit/3b130e83"><code>3b130e8</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/595416d6"><code>595416d</code></a>)</li>
+<li><strong>Editor icons change with their value.</strong> Tone curves, Fade, Vignette, Sharpness, Grain, Flash, Bleach, Fringe and Noise icons change shape with their setting, so you can see the change at a glance. (<a href="https://github.com/lilaccamera/lilaccamera/commit/3e59f674"><code>3e59f67</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/c16648c8"><code>c16648c</code></a>)</li>
+<li><strong>Full view zooms over the whole screen.</strong> Pinch and double-tap zoom in full view used to stay inside the photo's rectangle. They now use the whole screen, and the photo looks the same until zoomed. (<a href="https://github.com/lilaccamera/lilaccamera/commit/1ce62ef8"><code>1ce62ef</code></a>)</li>
+<li><strong>Editor notes appear in the camera's note pill.</strong> When a press cannot act, such as Undo with nothing to undo or a failed AI denoise, the message shows briefly in the camera's note pill instead of a pop-up. (<a href="https://github.com/lilaccamera/lilaccamera/commit/3d2b5e37"><code>3d2b5e3</code></a>)</li>
+<li><strong>The editor's main screen is split into smaller parts.</strong> It was too large for Android to speed up, so it ran in a slower mode. It is now divided into smaller parts, and some unused leftovers were removed. (<a href="https://github.com/lilaccamera/lilaccamera/commit/173a11d3"><code>173a11d</code></a>)</li>
+</ul>
+<h3 id="gallery-and-photo-view">Gallery and photo view<a class="headerlink" href="#gallery-and-photo-view" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>The photo and video viewer is rebuilt.</strong> Three see-through rows replace the bars: a top row with the grid icon, position count, rating and framed tags; an item row with the version or burst strip, the video timeline and the processing line; and an action row with Camera, Share, Edit, Delete and More. A tap hides the rows, and a double-tap zooms to one pixel of the preview per screen pixel. Each photo's row moves with it while you swipe. Full description: <a href="../gallery/#the-viewer">Gallery and viewer</a>. (<a href="https://github.com/lilaccamera/lilaccamera/commit/7db5557f"><code>7db5557</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/7a25e135"><code>7a25e13</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/869d1d77"><code>869d1d7</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/e4f7a761"><code>e4f7a76</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/b98f1898"><code>b98f189</code></a>)</li>
+<li><strong>Swipe down for the grid, up for the camera.</strong> The picture grows from the camera's thumbnail and shrinks back into it, with the last viewfinder frame fading onto the live picture. The thumbnail and its tap use one rule: the photo still processing, else the newest item, else the grid. (<a href="https://github.com/lilaccamera/lilaccamera/commit/5f7d98f0"><code>5f7d98f</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/985a47a2"><code>985a47a</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/0d8012aa"><code>0d8012a</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/c8dfc536"><code>c8dfc53</code></a>)</li>
+<li><strong>The processing line replaces the processing chip.</strong> It shows the state and stage with one action: Pause, Resume, Retry, Render or Render now, and a link to the queue. (<a href="https://github.com/lilaccamera/lilaccamera/commit/82e2cd25"><code>82e2cd2</code></a>)</li>
+<li><strong>Versions and bursts share one strip.</strong> A burst's frames show in the viewer's strip, with Use as cover and Export of one frame or all. The separate burst screen is gone, and its Chinese texts are English. (<a href="https://github.com/lilaccamera/lilaccamera/commit/0f989d7f"><code>0f989d7</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/ad5471d1"><code>ad5471d</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/c0d9a13c"><code>c0d9a13</code></a>)</li>
+<li><strong>Delete has an Undo, also for other apps' photos.</strong> A deleted item disappears at once and a banner offers Undo for 5 seconds; a sheet appears only for a real choice. Photos from other apps go to the system trash and Undo restores them. Rating and Protect belong to the photo, and a protected photo refuses deletion. (<a href="https://github.com/lilaccamera/lilaccamera/commit/fcc15239"><code>fcc1523</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/4d7c68b5"><code>4d7c68b</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/5f7fb5dd"><code>5f7fb5d</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/5728326b"><code>5728326</code></a>)</li>
+<li><strong>Videos get Lilac's own controls.</strong> Timeline, play and pause, ¼× / 1× and sound, a draggable slow band on 120 fps clips, and optional frame step and Save frame. A clip with no look plays straight to the screen, and one with a look is scaled to 1080p first: 4K through the look raised graphics faults on this phone until the driver dropped the app's GPU contexts. The player also no longer slows a normal clip or replays the end of a clip. (<a href="https://github.com/lilaccamera/lilaccamera/commit/c96c2b2c"><code>c96c2b2</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/889896ee"><code>889896e</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/fa2878ed"><code>fa2878e</code></a>)</li>
+<li><strong>The gallery grid is black and calm.</strong> One floating top line holds back, the Lilac and System tabs, the render queue and, while selecting, the count. Tiles carry at most two framed tags (RAW, ×N, BURST, LIVE, length, 120 or 960 FPS, IMPORT, a lock, FAILED), and a tile's edge shows its render state. The fast scroller is a slim bar. A sideways swipe switches tabs. (<a href="https://github.com/lilaccamera/lilaccamera/commit/8744453b"><code>8744453</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/778922a2"><code>778922a</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/cea60e4e"><code>cea60e4</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/5d1c3b48"><code>5d1c3b4</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/d9728e0b"><code>d9728e0</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/4aa640a8"><code>4aa640a</code></a>)</li>
+<li><strong>Selecting uses the viewer's action row.</strong> Export, Share, Paste look, Delete and Re-render float at the bottom. On the System tab, <strong>Add to Lilac</strong> copies other apps' photos into Lilac's library, where they can be rendered again, versioned, rated and protected. (<a href="https://github.com/lilaccamera/lilaccamera/commit/0a9419f3"><code>0a9419f</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/08417ca8"><code>08417ca</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/79918411"><code>7991841</code></a>)</li>
+<li><strong>The gallery and viewer turn with the phone.</strong> They follow auto-rotate; a landscape viewer moves its controls to the edges and the grid has five columns. Pictures are centred, and a 3:4 photo sits evenly between the rows. (<a href="https://github.com/lilaccamera/lilaccamera/commit/50c9b691"><code>50c9b69</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/ea0b4827"><code>ea0b482</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/b5bde52e"><code>b5bde52</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/222ab84f"><code>222ab84</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/15acd190"><code>15acd19</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/be7e8d2e"><code>be7e8d2</code></a>)</li>
+<li><strong>The picture glides between the viewer and the editor.</strong> It moves from its place in one to its place in the other in 0.26 s, without a copy, unless you are zoomed in or in landscape. (<a href="https://github.com/lilaccamera/lilaccamera/commit/497c4d2d"><code>497c4d2</code></a>)</li>
+<li><strong>HDR display is hidden where it shows nothing.</strong> On a screen with no HDR headroom the HDR tag and sheet are gone, saving a second bitmap. Exports keep their gain maps. (<a href="https://github.com/lilaccamera/lilaccamera/commit/7b49c992"><code>7b49c99</code></a>)</li>
+<li><strong>An optional Lilac Gallery launcher icon.</strong> A switch in Settings › Setup › Interface adds an icon that opens the grid without starting the camera. (<a href="https://github.com/lilaccamera/lilaccamera/commit/8320cc2b"><code>8320cc2</code></a>)</li>
+<li><strong>Processing photos screen with time left.</strong> A button in the gallery header opens a screen showing every photo still being developed, with an overall progress bar and a row per photo with its state and a Retry or Skip action. Progress is reported in steps, so you see "Processing 2 of 5 · 1:20 left". (<a href="https://github.com/lilaccamera/lilaccamera/commit/1cc4b9a8"><code>1cc4b9a</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/047859a9"><code>047859a</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/e3609810"><code>e360981</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/1c11ea5a"><code>1c11ea5</code></a>)</li>
+<li><strong>Notifications for waiting photos.</strong> A notification shows progress with Pause and Resume, and "Render 812 MB · Free 410 MB" so you can see how close a render is to being stopped by Android. A paused notice says progress is saved, and a photo that fails three times gets a notice that its RAW file is kept. (<a href="https://github.com/lilaccamera/lilaccamera/commit/a2c7154c"><code>a2c7154</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/749ee63a"><code>749ee63</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/064d9de8"><code>064d9de</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/e3609810"><code>e360981</code></a>)</li>
+<li><strong>Pause inside a photo, and skip a photo.</strong> Pause now stops at the next save point instead of waiting for the whole photo, and Resume continues from there. A photo that keeps getting stopped can be skipped so it no longer holds up the rest. Skipped photos keep their RAW file and can be queued again. (<a href="https://github.com/lilaccamera/lilaccamera/commit/afff1593"><code>afff159</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/f928f8ba"><code>f928f8b</code></a>)</li>
+<li><strong>Photos and their copies form a stack.</strong> A photo and its re-rendered copies show as one tile with a count. A strip in the photo view switches between versions, all sharing one zoom so the crop stays exact, and Delete asks whether to remove one version or all. (<a href="https://github.com/lilaccamera/lilaccamera/commit/a902e87b"><code>a902e87</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/5038f146"><code>5038f14</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/204e44b3"><code>204e44b</code></a>)</li>
+<li><strong>Camera JPEG kept for comparison.</strong> A "Camera JPEG" tile in quick settings also keeps the camera's own full-size JPEG from every Pro shot, and the first frame of a multi-frame Photo mode shot, as the stack's oldest version. It is shown unedited and is not auto-saved. (<a href="https://github.com/lilaccamera/lilaccamera/commit/a902e87b"><code>a902e87</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/f06e0fa2"><code>f06e0fa</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/9742ad31"><code>9742ad3</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/4be5a590"><code>4be5a59</code></a>)</li>
+<li><strong>More in the photo info.</strong> The info panel shows the file type, how many frames a stack merged, the version's full settings, and every other file kept with the photo and its size. A merged Photo mode shot is badged "Stacked - 9 frames" instead of being called RAW. (<a href="https://github.com/lilaccamera/lilaccamera/commit/898b6029"><code>898b602</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/204e44b3"><code>204e44b</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/4be5a590"><code>4be5a59</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/1f3f40c7"><code>1f3f40c</code></a>)</li>
+</ul>
+<h3 id="reliability-fixes">Reliability fixes<a class="headerlink" href="#reliability-fixes" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>The viewfinder no longer freezes.</strong> The phone's camera software sometimes frees preview pictures the app is still drawing, which froze the viewfinder until the app restarted. The app now draws only fresh frames, starts the preview afresh for each new camera stream, and holds back redraws only in short risky moments so the picture does not jump. In tests, 18 GPU errors in 61 Pro/Photo switches before, none after. (<a href="https://github.com/lilaccamera/lilaccamera/commit/a87460fb"><code>a87460f</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/49a1bb5d"><code>49a1bb5</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/f18c365f"><code>f18c365</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/6d9a4997"><code>6d9a499</code></a>)</li>
+<li><strong>The viewfinder recovers if the GPU drops it.</strong> After repeated GPU errors the phone can silently invalidate the viewfinder. The app now checks after every frame and rebuilds it after two failures in a row, so it was live again about 0.6 s later. (<a href="https://github.com/lilaccamera/lilaccamera/commit/7e67dbf0"><code>7e67dbf</code></a>)</li>
+<li><strong>The first Pro photo no longer crashes the app on Android 16.</strong> The system refused to start the queue's background service. It is now started correctly, and if it is not allowed, the photo stays queued for the next app start instead of crashing every time. (<a href="https://github.com/lilaccamera/lilaccamera/commit/88fd0a49"><code>88fd0a4</code></a>)</li>
+<li><strong>A failed RAW shot no longer blocks Pro for the whole session.</strong> One failed RAW shot breaks RAW for every app on this phone until the camera is reopened. The app now reopens the camera itself and says "Pro shot failed. Camera restarted, try again." A second failure in a row blocks RAW until the app is restarted. (<a href="https://github.com/lilaccamera/lilaccamera/commit/0e3da201"><code>0e3da20</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/4a6169f5"><code>4a6169f</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/7e4416d3"><code>7e4416d</code></a>)</li>
+<li><strong>No more missing cameras at start-up.</strong> Two parts of the app could write the camera's status at the same moment, so the app saw no cameras and the viewfinder stayed frozen (2 of 42 quick starts). All status changes are now made safely, and 30 of 30 quick starts opened the camera. (<a href="https://github.com/lilaccamera/lilaccamera/commit/67117b77"><code>67117b7</code></a>)</li>
+<li><strong>Zoomed RAW shots no longer break RAW capture.</strong> With a zoom framing, the RAW shot failed and so did later ones until the camera was reopened. Zoomed RAW shots are now taken at full sensor size and cropped afterwards, so the photo keeps its framing. (<a href="https://github.com/lilaccamera/lilaccamera/commit/5e89acc3"><code>5e89acc</code></a>)</li>
+<li><strong>Pro shot refused while the last RAW is still being saved.</strong> Starting a RAW shot while the previous one was still open made RAW fail until the camera was reopened. The shot is now refused with "Still saving the last photo." As a side effect, a continuous RAW burst stops after its first batch here. (<a href="https://github.com/lilaccamera/lilaccamera/commit/cb6e8e17"><code>cb6e8e1</code></a>)</li>
+<li><strong>A shot that never finishes now fails cleanly.</strong> If the camera drops a frame without saying so, the shutter used to stay dead until the camera reopened. The app now gives up after the expected time plus a short margin, the shutter works again, and on RAW the camera is reopened and you are told. (<a href="https://github.com/lilaccamera/lilaccamera/commit/125a85c6"><code>125a85c</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/be7731b0"><code>be7731b</code></a>)</li>
+<li><strong>Releasing the camera key during a burst no longer hangs the shot.</strong> Letting go of the key, or clearing a tap focus, mid-burst made the camera drop the last RAW frame, so the shot hung and the camera could freeze for about 65 s. These requests now wait until the shot has ended. (<a href="https://github.com/lilaccamera/lilaccamera/commit/dde2f3fd"><code>dde2f3f</code></a>)</li>
+<li><strong>Background blur no longer comes out streaked or with black bands.</strong> Blur passes interrupted by the viewfinder came back corrupted, and 8 MP photos got black bands. The blur now runs at normal priority and waits for the GPU after each pass: 0 of 24 test renders were damaged, against 3 of 6 before. The viewfinder may stall briefly while a photo is blurred. (<a href="https://github.com/lilaccamera/lilaccamera/commit/feed375f"><code>feed375</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/7e8a07f4"><code>7e8a07f</code></a>)</li>
+<li><strong>Magenta shadows in 3-frame RAW merges fixed.</strong> The phone's graphics software computed one step wrongly for zero, so flat dark areas filled with red and blue spikes in 3-frame RAW merges. The step was rewritten, and the result now matches a reference calculation exactly. (<a href="https://github.com/lilaccamera/lilaccamera/commit/4c395891"><code>4c39589</code></a>)</li>
+<li><strong>Stabilisation no longer breaks the viewfinder.</strong> Preview stabilisation is hidden on this phone, because its extra video stream made the camera close. Enhanced stabilisation is now requested only when the camera offers it, fixing a black viewfinder, and a dead preview no longer keeps stabilisation running after switching between Video and Photo. (<a href="https://github.com/lilaccamera/lilaccamera/commit/4e23000b"><code>4e23000</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/e3be32be"><code>e3be32b</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/42df1e23"><code>42df1e2</code></a>)</li>
+<li><strong>Film grain data cannot be corrupted.</strong> Two parts of the app writing the grain data at once could produce a broken file. Each now writes its own temporary file. (<a href="https://github.com/lilaccamera/lilaccamera/commit/b3dd64a3"><code>b3dd64a</code></a>)</li>
+<li><strong>A camera without a flash never asks for flash mode.</strong> With the flash setting on, a camera with no flash unit (for instance the front camera) was still put into flash exposure mode. That is now used only when the open camera has a flash. (<a href="https://github.com/lilaccamera/lilaccamera/commit/eb686b14"><code>eb686b1</code></a>)</li>
+</ul>
+<h3 id="touch-sound-and-haptics">Touch, sound and haptics<a class="headerlink" href="#touch-sound-and-haptics" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>The shutter's ready tick can be felt.</strong> The tick used vibration effects this phone's vibrator cannot play, so it never registered. It is now a short plain pulse, chosen on the phone, and plays only when the shutter was pressed while busy. (<a href="https://github.com/lilaccamera/lilaccamera/commit/1105125d"><code>1105125</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/16781d68"><code>16781d6</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/afd1a7f8"><code>afd1a7f</code></a>)</li>
+<li><strong>One light tick for a look swipe.</strong> A look swipe used to vibrate twice. It now gives a single tick when the look changes. (<a href="https://github.com/lilaccamera/lilaccamera/commit/4be05f68"><code>4be05f6</code></a>)</li>
+</ul>
+<h3 id="working-with-the-phone-and-other-apps">Working with the phone and other apps<a class="headerlink" href="#working-with-the-phone-and-other-apps" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>A quick photo and video screen for other apps.</strong> When another app asks for a photo, a stripped-down camera opens and then shows the result with Retake and Use. The photo is always stacked, up to 12 MP from the back camera, saved about 4.8 s after the press, and leaves no copy in the gallery. Video requests get a matching Video screen, and the flash starts on Automatic. (<a href="https://github.com/lilaccamera/lilaccamera/commit/a7655e31"><code>a7655e3</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/e1f5e089"><code>e1f5e08</code></a>)</li>
+<li><strong>The camera opens over the lock screen.</strong> Launching from the camera key or the power-button gesture on a locked phone shows the camera at once. Until you unlock, only the camera is open, and gallery, settings and look screens ask for the unlock first. This was only tested on an unlocked phone. (<a href="https://github.com/lilaccamera/lilaccamera/commit/5fe2533b"><code>5fe2533</code></a>)</li>
+<li><strong>Two-stage camera key.</strong> On phones with a camera key that has a half press, a half press focuses once and holds focus until the key is released. A full press takes the picture while the preview keeps running. (<a href="https://github.com/lilaccamera/lilaccamera/commit/9646867b"><code>9646867</code></a>)</li>
+<li><strong>Volume keys zoom on phones with a camera key.</strong> The XZ1 Compact already has a shutter key, so there the volume keys step through the zoom stops in every mode, like a camera's zoom rocker. Phones without a camera key keep taking photos, and a choice made in settings is kept. (<a href="https://github.com/lilaccamera/lilaccamera/commit/132da3ca"><code>132da3c</code></a>)</li>
+<li><strong>Only the real app offers itself as a camera.</strong> Test builds installed alongside used to fill the chooser for the camera key and power-button gesture with about a dozen entries, so no default could stick. Now only the release build registers as a camera. (<a href="https://github.com/lilaccamera/lilaccamera/commit/1947fc62"><code>1947fc6</code></a>)</li>
+<li><strong>Notifications are asked for on the first-run screen.</strong> The first-run screen asks for camera, microphone and, on Android 13 and up, notifications in one go, and says notifications are optional and show the progress of Pro photos. Saying no does not block the camera. (<a href="https://github.com/lilaccamera/lilaccamera/commit/cff63e81"><code>cff63e8</code></a>)</li>
+<li><strong>The slow-motion companion is safer to install and works with the GitHub beta.</strong> The install script checks that Sony's photo service and the RAW support layer are present, says which feature (slow motion or Pro mode) will not work if one is missing, and asks before going on. The companion also accepts Lilac builds signed with the project's own key, so the GitHub beta beside a ROM's copy is no longer locked out. (<a href="https://github.com/lilaccamera/lilaccamera/commit/dcceb3af"><code>dcceb3a</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/b3249f8e"><code>b3249f8</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/c8c06a61"><code>c8c06a6</code></a>)</li>
+</ul>
+<h3 id="privacy-branding-and-housekeeping">Privacy, branding and housekeeping<a class="headerlink" href="#privacy-branding-and-housekeeping" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Crash reporting to Tencent removed.</strong> The Bugly crash reporter is gone, so no crash data or Android device ID is sent to Tencent. (<a href="https://github.com/lilaccamera/lilaccamera/commit/3b014615"><code>3b01461</code></a>)</li>
+<li><strong>Update check turned off.</strong> The default build used to ask upstream's server and offer to install upstream's app, which would have installed as a second separate app. It now makes no network request, downloads nothing, and the "Check for Updates" row is hidden in Settings. (<a href="https://github.com/lilaccamera/lilaccamera/commit/278728b3"><code>278728b</code></a>)</li>
+<li><strong>The app is now Lilac Camera.</strong> It has that name in every language and its own app ID (io.github.lilaccamera), so it sits beside the original Photon Camera instead of replacing it. Installs under the old ID stay separate and keep their data. (<a href="https://github.com/lilaccamera/lilaccamera/commit/ba66ab20"><code>ba66ab2</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/a1f3ed12"><code>a1f3ed1</code></a>)</li>
+<li><strong>Files are named after Lilac Camera.</strong> New photos and videos go to DCIM/LilacCamera (exports to Movies/LilacCamera) with a LilacCamera_ file name prefix. Photos saved earlier stay where they are, and older RAW files are still recognised. (<a href="https://github.com/lilaccamera/lilaccamera/commit/f48f17a5"><code>f48f17a</code></a>)</li>
+<li><strong>New app icon and frame logo.</strong> The icon is a camera with a lilac flash dot on deep purple, with a one-colour version for Android's themed icons. The frame editor's logo is now the one-colour mark, and the old Photon icons are removed. (<a href="https://github.com/lilaccamera/lilaccamera/commit/5226ed27"><code>5226ed2</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/4363f0e4"><code>4363f0e</code></a>)</li>
+<li>
+<p><strong>Own version numbers and a beta that installs beside the ROM's copy.</strong> Releases are numbered from 0.1.0. A beta build is named "Lilac Beta" under its own ID, so it installs beside a Lilac that came with the ROM, and releases carry the app and the companion, signed with the release key. (<a href="https://github.com/lilaccamera/lilaccamera/commit/c6a3964b"><code>c6a3964</code></a>, <a href="https://github.com/lilaccamera/lilaccamera/commit/9e75151e"><code>9e75151</code></a>)</p>
+</li>
+<li>
+<p><strong>No AI Review in the viewer.</strong> The AI Review button, its score sheet and the payment dialog only it opened are gone. (<a href="https://github.com/lilaccamera/lilaccamera/commit/c0d9a13c"><code>c0d9a13</code></a>)</p>
+</li>
+</ul>
+<h2 id="what-is-not-listed">What is not listed<a class="headerlink" href="#what-is-not-listed" title="Permanent link">&para;</a></h2>
+<p>Changes nobody could notice are left out: debug-only switches, tests and test scripts, code tidying, build and release plumbing, and the documentation site itself. Work that was later replaced is described only as it is now. Updates that came from PhotonCamera itself are not Lilac's own work and are not listed here.</p>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog" role="status" aria-atomic="true">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":[],"redirect":null,"search":"../../assets/javascripts/workers/search.719e0d91.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.3cb411a8.min.js"></script>
+      
+    
+  </body>
+</html>
